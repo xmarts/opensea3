@@ -3,7 +3,3 @@
 	url = git@github.com:xmarts/l10n_ec_einvoice.git
 	branch = 14.0-einvoice
 
-[submodule "xmarts/l10n_ec_payroll"]
-	path = xmarts/l10n_ec_payroll
-	url = git@github.com:xmarts/l10n_ec_payroll.git
-	branch = 14.0-payroll
