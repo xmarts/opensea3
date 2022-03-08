@@ -1,2 +1,0 @@
-Cheques para Ecuador
---------------------

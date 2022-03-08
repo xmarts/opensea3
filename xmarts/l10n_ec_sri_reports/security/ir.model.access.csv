@@ -1,4 +1,0 @@
-"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
-
-"access_ats_wizard","Access ATS Wizard","model_ats_wizard","account.group_account_invoice",1,1,1,1
-"access_account_report_tax_wizard","account.withholding.line","model_account_report_tax_wizard","account.group_account_invoice",1,1,1,1

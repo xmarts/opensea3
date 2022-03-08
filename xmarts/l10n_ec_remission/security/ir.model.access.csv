@@ -1,9 +1,0 @@
-"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
-
-"access_account_remission_guide","Remission Guide Access","model_account_remission_guide","account.group_account_invoice",1,1,1,1
-"access_account_remission_guide_line","Remission Guide Line Access","model_account_remission_guide_line","account.group_account_invoice",1,1,1,1
-
-"access_generate_remission_guide","Generate Remission Guide Access","model_generate_remission_guide","account.group_account_invoice",1,1,1,1
-"access_account_remission_route","account.remission.route","model_account_remission_route","account.group_account_invoice",1,1,1,1
-"access_remission_guide_reason","remission.guide.reason","model_remission_guide_reason","account.group_account_invoice",1,1,1,1
-
