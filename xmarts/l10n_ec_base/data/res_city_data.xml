@@ -1,0 +1,1349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+
+    <record id="ecuador_res_city_1" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">101</field>
+        <field name="name">Cuenca</field>
+    </record>
+    <record id="ecuador_res_city_2" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">102</field>
+        <field name="name">Giron</field>
+    </record>
+    <record id="ecuador_res_city_3" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">103</field>
+        <field name="name">Gualaceo</field>
+    </record>
+    <record id="ecuador_res_city_4" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">104</field>
+        <field name="name">Nabon</field>
+    </record>
+    <record id="ecuador_res_city_5" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">105</field>
+        <field name="name">Paute</field>
+    </record>
+    <record id="ecuador_res_city_6" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">106</field>
+        <field name="name">Pucara</field>
+    </record>
+    <record id="ecuador_res_city_7" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">107</field>
+        <field name="name">San Fernando</field>
+    </record>
+    <record id="ecuador_res_city_8" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">108</field>
+        <field name="name">Santa Isabel</field>
+    </record>
+    <record id="ecuador_res_city_9" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">109</field>
+        <field name="name">Sigsig</field>
+    </record>
+    <record id="ecuador_res_city_10" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">110</field>
+        <field name="name">Oña</field>
+    </record>
+    <record id="ecuador_res_city_11" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">111</field>
+        <field name="name">Chordeleg</field>
+    </record>
+    <record id="ecuador_res_city_12" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">112</field>
+        <field name="name">El Pan</field>
+    </record>
+    <record id="ecuador_res_city_13" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">113</field>
+        <field name="name">Sevilla De Oro</field>
+    </record>
+    <record id="ecuador_res_city_14" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">114</field>
+        <field name="name">Guachapala</field>
+    </record>
+    <record id="ecuador_res_city_15" model="res.city">
+        <field name="state_id" ref="state_ec_01"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">115</field>
+        <field name="name">Camilo Ponce Enriquez</field>
+    </record>
+    <record id="ecuador_res_city_16" model="res.city">
+        <field name="state_id" ref="state_ec_02"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">201</field>
+        <field name="name">Guaranda</field>
+    </record>
+    <record id="ecuador_res_city_17" model="res.city">
+        <field name="state_id" ref="state_ec_02"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">202</field>
+        <field name="name">Chillanes</field>
+    </record>
+    <record id="ecuador_res_city_18" model="res.city">
+        <field name="state_id" ref="state_ec_02"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">203</field>
+        <field name="name">Chimbo</field>
+    </record>
+    <record id="ecuador_res_city_19" model="res.city">
+        <field name="state_id" ref="state_ec_02"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">204</field>
+        <field name="name">Echeandia</field>
+    </record>
+    <record id="ecuador_res_city_20" model="res.city">
+        <field name="state_id" ref="state_ec_02"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">205</field>
+        <field name="name">San Miguel</field>
+    </record>
+    <record id="ecuador_res_city_21" model="res.city">
+        <field name="state_id" ref="state_ec_02"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">206</field>
+        <field name="name">Caluma</field>
+    </record>
+    <record id="ecuador_res_city_22" model="res.city">
+        <field name="state_id" ref="state_ec_02"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">207</field>
+        <field name="name">Las Naves</field>
+    </record>
+    <record id="ecuador_res_city_23" model="res.city">
+        <field name="state_id" ref="state_ec_03"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">301</field>
+        <field name="name">Azogues</field>
+    </record>
+    <record id="ecuador_res_city_24" model="res.city">
+        <field name="state_id" ref="state_ec_03"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">302</field>
+        <field name="name">Biblian</field>
+    </record>
+    <record id="ecuador_res_city_25" model="res.city">
+        <field name="state_id" ref="state_ec_03"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">303</field>
+        <field name="name">Cañar</field>
+    </record>
+    <record id="ecuador_res_city_26" model="res.city">
+        <field name="state_id" ref="state_ec_03"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">304</field>
+        <field name="name">La Troncal</field>
+    </record>
+    <record id="ecuador_res_city_27" model="res.city">
+        <field name="state_id" ref="state_ec_03"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">305</field>
+        <field name="name">El Tambo</field>
+    </record>
+    <record id="ecuador_res_city_28" model="res.city">
+        <field name="state_id" ref="state_ec_03"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">306</field>
+        <field name="name">Deleg</field>
+    </record>
+    <record id="ecuador_res_city_29" model="res.city">
+        <field name="state_id" ref="state_ec_03"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">307</field>
+        <field name="name">Suscal</field>
+    </record>
+    <record id="ecuador_res_city_30" model="res.city">
+        <field name="state_id" ref="state_ec_04"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">401</field>
+        <field name="name">Tulcan</field>
+    </record>
+    <record id="ecuador_res_city_31" model="res.city">
+        <field name="state_id" ref="state_ec_04"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">402</field>
+        <field name="name">Bolivar</field>
+    </record>
+    <record id="ecuador_res_city_32" model="res.city">
+        <field name="state_id" ref="state_ec_04"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">403</field>
+        <field name="name">Espejo</field>
+    </record>
+    <record id="ecuador_res_city_33" model="res.city">
+        <field name="state_id" ref="state_ec_04"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">404</field>
+        <field name="name">Mira</field>
+    </record>
+    <record id="ecuador_res_city_34" model="res.city">
+        <field name="state_id" ref="state_ec_04"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">405</field>
+        <field name="name">Montufar</field>
+    </record>
+    <record id="ecuador_res_city_35" model="res.city">
+        <field name="state_id" ref="state_ec_04"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">406</field>
+        <field name="name">San Pedro De Huaca</field>
+    </record>
+    <record id="ecuador_res_city_36" model="res.city">
+        <field name="state_id" ref="state_ec_05"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">501</field>
+        <field name="name">Latacunga</field>
+    </record>
+    <record id="ecuador_res_city_37" model="res.city">
+        <field name="state_id" ref="state_ec_05"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">502</field>
+        <field name="name">La Mana</field>
+    </record>
+    <record id="ecuador_res_city_38" model="res.city">
+        <field name="state_id" ref="state_ec_05"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">503</field>
+        <field name="name">Pangua</field>
+    </record>
+    <record id="ecuador_res_city_39" model="res.city">
+        <field name="state_id" ref="state_ec_05"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">504</field>
+        <field name="name">Pujili</field>
+    </record>
+    <record id="ecuador_res_city_40" model="res.city">
+        <field name="state_id" ref="state_ec_05"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">505</field>
+        <field name="name">Salcedo</field>
+    </record>
+    <record id="ecuador_res_city_41" model="res.city">
+        <field name="state_id" ref="state_ec_05"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">506</field>
+        <field name="name">Saquisili</field>
+    </record>
+    <record id="ecuador_res_city_42" model="res.city">
+        <field name="state_id" ref="state_ec_05"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">507</field>
+        <field name="name">Sigchos</field>
+    </record>
+    <record id="ecuador_res_city_43" model="res.city">
+        <field name="state_id" ref="state_ec_06"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">601</field>
+        <field name="name">Riobamba</field>
+    </record>
+    <record id="ecuador_res_city_44" model="res.city">
+        <field name="state_id" ref="state_ec_06"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">602</field>
+        <field name="name">Alausi</field>
+    </record>
+    <record id="ecuador_res_city_45" model="res.city">
+        <field name="state_id" ref="state_ec_06"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">603</field>
+        <field name="name">Colta</field>
+    </record>
+    <record id="ecuador_res_city_46" model="res.city">
+        <field name="state_id" ref="state_ec_06"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">604</field>
+        <field name="name">Chambo</field>
+    </record>
+    <record id="ecuador_res_city_47" model="res.city">
+        <field name="state_id" ref="state_ec_06"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">605</field>
+        <field name="name">Chunchi</field>
+    </record>
+    <record id="ecuador_res_city_48" model="res.city">
+        <field name="state_id" ref="state_ec_06"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">606</field>
+        <field name="name">Guamote</field>
+    </record>
+    <record id="ecuador_res_city_49" model="res.city">
+        <field name="state_id" ref="state_ec_06"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">607</field>
+        <field name="name">Guano</field>
+    </record>
+    <record id="ecuador_res_city_50" model="res.city">
+        <field name="state_id" ref="state_ec_06"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">608</field>
+        <field name="name">Pallatanga</field>
+    </record>
+    <record id="ecuador_res_city_51" model="res.city">
+        <field name="state_id" ref="state_ec_06"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">609</field>
+        <field name="name">Penipe</field>
+    </record>
+    <record id="ecuador_res_city_52" model="res.city">
+        <field name="state_id" ref="state_ec_06"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">610</field>
+        <field name="name">Cumanda</field>
+    </record>
+    <record id="ecuador_res_city_53" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">701</field>
+        <field name="name">Machala</field>
+    </record>
+    <record id="ecuador_res_city_54" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">702</field>
+        <field name="name">Arenillas</field>
+    </record>
+    <record id="ecuador_res_city_55" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">703</field>
+        <field name="name">Atahualpa</field>
+    </record>
+    <record id="ecuador_res_city_56" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">704</field>
+        <field name="name">Balsas</field>
+    </record>
+    <record id="ecuador_res_city_57" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">705</field>
+        <field name="name">Chilla</field>
+    </record>
+    <record id="ecuador_res_city_58" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">706</field>
+        <field name="name">El Guabo</field>
+    </record>
+    <record id="ecuador_res_city_59" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">707</field>
+        <field name="name">Huaquillas</field>
+    </record>
+    <record id="ecuador_res_city_60" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">708</field>
+        <field name="name">Marcabeli</field>
+    </record>
+    <record id="ecuador_res_city_61" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">709</field>
+        <field name="name">Pasaje</field>
+    </record>
+    <record id="ecuador_res_city_62" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">710</field>
+        <field name="name">Piñas</field>
+    </record>
+    <record id="ecuador_res_city_63" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">711</field>
+        <field name="name">Portovelo</field>
+    </record>
+    <record id="ecuador_res_city_64" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">712</field>
+        <field name="name">Santa Rosa</field>
+    </record>
+    <record id="ecuador_res_city_65" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">713</field>
+        <field name="name">Zaruma</field>
+    </record>
+    <record id="ecuador_res_city_66" model="res.city">
+        <field name="state_id" ref="state_ec_07"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">714</field>
+        <field name="name">Las Lajas</field>
+    </record>
+    <record id="ecuador_res_city_67" model="res.city">
+        <field name="state_id" ref="state_ec_08"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">801</field>
+        <field name="name">Esmeraldas</field>
+    </record>
+    <record id="ecuador_res_city_68" model="res.city">
+        <field name="state_id" ref="state_ec_08"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">802</field>
+        <field name="name">Eloy Alfaro</field>
+    </record>
+    <record id="ecuador_res_city_69" model="res.city">
+        <field name="state_id" ref="state_ec_08"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">803</field>
+        <field name="name">Muisne</field>
+    </record>
+    <record id="ecuador_res_city_70" model="res.city">
+        <field name="state_id" ref="state_ec_08"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">804</field>
+        <field name="name">Quininde</field>
+    </record>
+    <record id="ecuador_res_city_71" model="res.city">
+        <field name="state_id" ref="state_ec_08"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">805</field>
+        <field name="name">San Lorenzo</field>
+    </record>
+    <record id="ecuador_res_city_72" model="res.city">
+        <field name="state_id" ref="state_ec_08"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">806</field>
+        <field name="name">Atacames</field>
+    </record>
+    <record id="ecuador_res_city_73" model="res.city">
+        <field name="state_id" ref="state_ec_08"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">807</field>
+        <field name="name">Rioverde</field>
+    </record>
+    <record id="ecuador_res_city_74" model="res.city">
+        <field name="state_id" ref="state_ec_08"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">808</field>
+        <field name="name">La Concordia</field>
+    </record>
+    <record id="ecuador_res_city_75" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">901</field>
+        <field name="name">Guayaquil</field>
+    </record>
+    <record id="ecuador_res_city_76" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">902</field>
+        <field name="name">Alfredo Baquerizo Moreno</field>
+    </record>
+    <record id="ecuador_res_city_77" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">903</field>
+        <field name="name">Balao</field>
+    </record>
+    <record id="ecuador_res_city_78" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">904</field>
+        <field name="name">Balzar</field>
+    </record>
+    <record id="ecuador_res_city_79" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">905</field>
+        <field name="name">Colimes</field>
+    </record>
+    <record id="ecuador_res_city_80" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">906</field>
+        <field name="name">Daule</field>
+    </record>
+    <record id="ecuador_res_city_81" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">907</field>
+        <field name="name">Duran</field>
+    </record>
+    <record id="ecuador_res_city_82" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">908</field>
+        <field name="name">Empalme</field>
+    </record>
+    <record id="ecuador_res_city_83" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">909</field>
+        <field name="name">El Triunfo</field>
+    </record>
+    <record id="ecuador_res_city_84" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">910</field>
+        <field name="name">Milagro</field>
+    </record>
+    <record id="ecuador_res_city_85" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">911</field>
+        <field name="name">Naranjal</field>
+    </record>
+    <record id="ecuador_res_city_86" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">912</field>
+        <field name="name">Naranjito</field>
+    </record>
+    <record id="ecuador_res_city_87" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">913</field>
+        <field name="name">Palestina</field>
+    </record>
+    <record id="ecuador_res_city_88" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">914</field>
+        <field name="name">Pedro Carbo</field>
+    </record>
+    <record id="ecuador_res_city_89" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">916</field>
+        <field name="name">Samborondon</field>
+    </record>
+    <record id="ecuador_res_city_90" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">918</field>
+        <field name="name">Santa Lucia</field>
+    </record>
+    <record id="ecuador_res_city_91" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">919</field>
+        <field name="name">Salitre</field>
+    </record>
+    <record id="ecuador_res_city_92" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">920</field>
+        <field name="name">San Jacinto De Yaguachi</field>
+    </record>
+    <record id="ecuador_res_city_93" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">921</field>
+        <field name="name">Playas</field>
+    </record>
+    <record id="ecuador_res_city_94" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">922</field>
+        <field name="name">Simon Bolivar</field>
+    </record>
+    <record id="ecuador_res_city_95" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">923</field>
+        <field name="name">Crnel. Marcelino Maridueña</field>
+    </record>
+    <record id="ecuador_res_city_96" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">924</field>
+        <field name="name">Lomas De Sargentillo</field>
+    </record>
+    <record id="ecuador_res_city_97" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">925</field>
+        <field name="name">Nobol</field>
+    </record>
+    <record id="ecuador_res_city_98" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">927</field>
+        <field name="name">Gnral. Antonio Elizalde</field>
+    </record>
+    <record id="ecuador_res_city_99" model="res.city">
+        <field name="state_id" ref="state_ec_09"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">928</field>
+        <field name="name">Isidro Ayora</field>
+    </record>
+    <record id="ecuador_res_city_100" model="res.city">
+        <field name="state_id" ref="state_ec_10"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1001</field>
+        <field name="name">Ibarra</field>
+    </record>
+    <record id="ecuador_res_city_101" model="res.city">
+        <field name="state_id" ref="state_ec_10"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1002</field>
+        <field name="name">Antonio Ante</field>
+    </record>
+    <record id="ecuador_res_city_102" model="res.city">
+        <field name="state_id" ref="state_ec_10"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1003</field>
+        <field name="name">Cotacachi</field>
+    </record>
+    <record id="ecuador_res_city_103" model="res.city">
+        <field name="state_id" ref="state_ec_10"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1004</field>
+        <field name="name">Otavalo</field>
+    </record>
+    <record id="ecuador_res_city_104" model="res.city">
+        <field name="state_id" ref="state_ec_10"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1005</field>
+        <field name="name">Pimampiro</field>
+    </record>
+    <record id="ecuador_res_city_105" model="res.city">
+        <field name="state_id" ref="state_ec_10"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1006</field>
+        <field name="name">San Miguel De Urcuqui</field>
+    </record>
+    <record id="ecuador_res_city_106" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1101</field>
+        <field name="name">Loja</field>
+    </record>
+    <record id="ecuador_res_city_107" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1102</field>
+        <field name="name">Calvas</field>
+    </record>
+    <record id="ecuador_res_city_108" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1103</field>
+        <field name="name">Catamayo</field>
+    </record>
+    <record id="ecuador_res_city_109" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1104</field>
+        <field name="name">Celica</field>
+    </record>
+    <record id="ecuador_res_city_110" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1105</field>
+        <field name="name">Chaguarpamba</field>
+    </record>
+    <record id="ecuador_res_city_111" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1106</field>
+        <field name="name">Espindola</field>
+    </record>
+    <record id="ecuador_res_city_112" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1107</field>
+        <field name="name">Gonzanama</field>
+    </record>
+    <record id="ecuador_res_city_113" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1108</field>
+        <field name="name">Macara</field>
+    </record>
+    <record id="ecuador_res_city_114" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1109</field>
+        <field name="name">Paltas</field>
+    </record>
+    <record id="ecuador_res_city_115" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1110</field>
+        <field name="name">Puyango</field>
+    </record>
+    <record id="ecuador_res_city_116" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1111</field>
+        <field name="name">Saraguro</field>
+    </record>
+    <record id="ecuador_res_city_117" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1112</field>
+        <field name="name">Sozoranga</field>
+    </record>
+    <record id="ecuador_res_city_118" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1113</field>
+        <field name="name">Zapotillo</field>
+    </record>
+    <record id="ecuador_res_city_119" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1114</field>
+        <field name="name">Pindal</field>
+    </record>
+    <record id="ecuador_res_city_120" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1115</field>
+        <field name="name">Quilanga</field>
+    </record>
+    <record id="ecuador_res_city_121" model="res.city">
+        <field name="state_id" ref="state_ec_11"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1116</field>
+        <field name="name">Olmedo</field>
+    </record>
+    <record id="ecuador_res_city_122" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1201</field>
+        <field name="name">Babahoyo</field>
+    </record>
+    <record id="ecuador_res_city_123" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1202</field>
+        <field name="name">Baba</field>
+    </record>
+    <record id="ecuador_res_city_124" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1203</field>
+        <field name="name">Montalvo</field>
+    </record>
+    <record id="ecuador_res_city_125" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1204</field>
+        <field name="name">Puebloviejo</field>
+    </record>
+    <record id="ecuador_res_city_126" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1205</field>
+        <field name="name">Quevedo</field>
+    </record>
+    <record id="ecuador_res_city_127" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1206</field>
+        <field name="name">Urdaneta</field>
+    </record>
+    <record id="ecuador_res_city_128" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1207</field>
+        <field name="name">Ventanas</field>
+    </record>
+    <record id="ecuador_res_city_129" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1208</field>
+        <field name="name">Vinces</field>
+    </record>
+    <record id="ecuador_res_city_130" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1209</field>
+        <field name="name">Palenque</field>
+    </record>
+    <record id="ecuador_res_city_131" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1210</field>
+        <field name="name">Buena Fe</field>
+    </record>
+    <record id="ecuador_res_city_132" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1211</field>
+        <field name="name">Valencia</field>
+    </record>
+    <record id="ecuador_res_city_133" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1212</field>
+        <field name="name">Mocache</field>
+    </record>
+    <record id="ecuador_res_city_134" model="res.city">
+        <field name="state_id" ref="state_ec_12"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1213</field>
+        <field name="name">Quinsaloma</field>
+    </record>
+    <record id="ecuador_res_city_135" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1301</field>
+        <field name="name">Portoviejo</field>
+    </record>
+    <record id="ecuador_res_city_136" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1302</field>
+        <field name="name">Bolivar</field>
+    </record>
+    <record id="ecuador_res_city_137" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1303</field>
+        <field name="name">Chone</field>
+    </record>
+    <record id="ecuador_res_city_138" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1304</field>
+        <field name="name">El Carmen</field>
+    </record>
+    <record id="ecuador_res_city_139" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1305</field>
+        <field name="name">Flavio Alfaro</field>
+    </record>
+    <record id="ecuador_res_city_140" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1306</field>
+        <field name="name">Jipijapa</field>
+    </record>
+    <record id="ecuador_res_city_141" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1307</field>
+        <field name="name">Junin</field>
+    </record>
+    <record id="ecuador_res_city_142" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1308</field>
+        <field name="name">Manta</field>
+    </record>
+    <record id="ecuador_res_city_143" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1309</field>
+        <field name="name">Montecristi</field>
+    </record>
+    <record id="ecuador_res_city_144" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1310</field>
+        <field name="name">Pajan</field>
+    </record>
+    <record id="ecuador_res_city_145" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1311</field>
+        <field name="name">Pichincha</field>
+    </record>
+    <record id="ecuador_res_city_146" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1312</field>
+        <field name="name">Rocafuerte</field>
+    </record>
+    <record id="ecuador_res_city_147" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1313</field>
+        <field name="name">Santa Ana</field>
+    </record>
+    <record id="ecuador_res_city_148" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1314</field>
+        <field name="name">Sucre</field>
+    </record>
+    <record id="ecuador_res_city_149" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1315</field>
+        <field name="name">Tosagua</field>
+    </record>
+    <record id="ecuador_res_city_150" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1316</field>
+        <field name="name">24 De Mayo</field>
+    </record>
+    <record id="ecuador_res_city_151" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1317</field>
+        <field name="name">Pedernales</field>
+    </record>
+    <record id="ecuador_res_city_152" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1318</field>
+        <field name="name">Olmedo</field>
+    </record>
+    <record id="ecuador_res_city_153" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1319</field>
+        <field name="name">Puerto Lopez</field>
+    </record>
+    <record id="ecuador_res_city_154" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1320</field>
+        <field name="name">Jama</field>
+    </record>
+    <record id="ecuador_res_city_155" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1321</field>
+        <field name="name">Jaramijo</field>
+    </record>
+    <record id="ecuador_res_city_156" model="res.city">
+        <field name="state_id" ref="state_ec_13"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1322</field>
+        <field name="name">San Vicente</field>
+    </record>
+    <record id="ecuador_res_city_157" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1401</field>
+        <field name="name">Morona</field>
+    </record>
+    <record id="ecuador_res_city_158" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1402</field>
+        <field name="name">Gualaquiza</field>
+    </record>
+    <record id="ecuador_res_city_159" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1403</field>
+        <field name="name">Limon Indanza</field>
+    </record>
+    <record id="ecuador_res_city_160" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1404</field>
+        <field name="name">Palora</field>
+    </record>
+    <record id="ecuador_res_city_161" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1405</field>
+        <field name="name">Santiago</field>
+    </record>
+    <record id="ecuador_res_city_162" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1406</field>
+        <field name="name">Sucua</field>
+    </record>
+    <record id="ecuador_res_city_163" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1407</field>
+        <field name="name">Huamboya</field>
+    </record>
+    <record id="ecuador_res_city_164" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1408</field>
+        <field name="name">San Juan Bosco</field>
+    </record>
+    <record id="ecuador_res_city_165" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1409</field>
+        <field name="name">Taisha</field>
+    </record>
+    <record id="ecuador_res_city_166" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1410</field>
+        <field name="name">Logroðo</field>
+    </record>
+    <record id="ecuador_res_city_167" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1411</field>
+        <field name="name">Pablo Sexto</field>
+    </record>
+    <record id="ecuador_res_city_168" model="res.city">
+        <field name="state_id" ref="state_ec_14"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1412</field>
+        <field name="name">Tiwintza</field>
+    </record>
+    <record id="ecuador_res_city_169" model="res.city">
+        <field name="state_id" ref="state_ec_15"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1501</field>
+        <field name="name">Tena</field>
+    </record>
+    <record id="ecuador_res_city_170" model="res.city">
+        <field name="state_id" ref="state_ec_15"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1503</field>
+        <field name="name">Archidona</field>
+    </record>
+    <record id="ecuador_res_city_171" model="res.city">
+        <field name="state_id" ref="state_ec_15"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1504</field>
+        <field name="name">El Chaco</field>
+    </record>
+    <record id="ecuador_res_city_172" model="res.city">
+        <field name="state_id" ref="state_ec_15"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1507</field>
+        <field name="name">Quijos</field>
+    </record>
+    <record id="ecuador_res_city_173" model="res.city">
+        <field name="state_id" ref="state_ec_15"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1509</field>
+        <field name="name">Carlos Julio Arosemena Tola</field>
+    </record>
+    <record id="ecuador_res_city_174" model="res.city">
+        <field name="state_id" ref="state_ec_16"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1601</field>
+        <field name="name">Pastaza</field>
+    </record>
+    <record id="ecuador_res_city_175" model="res.city">
+        <field name="state_id" ref="state_ec_16"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1602</field>
+        <field name="name">Mera</field>
+    </record>
+    <record id="ecuador_res_city_176" model="res.city">
+        <field name="state_id" ref="state_ec_16"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1603</field>
+        <field name="name">Santa Clara</field>
+    </record>
+    <record id="ecuador_res_city_177" model="res.city">
+        <field name="state_id" ref="state_ec_16"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1604</field>
+        <field name="name">Arajuno</field>
+    </record>
+    <record id="ecuador_res_city_178" model="res.city">
+        <field name="state_id" ref="state_ec_17"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1701</field>
+        <field name="name">Quito</field>
+    </record>
+    <record id="ecuador_res_city_179" model="res.city">
+        <field name="state_id" ref="state_ec_17"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1702</field>
+        <field name="name">Cayambe</field>
+    </record>
+    <record id="ecuador_res_city_180" model="res.city">
+        <field name="state_id" ref="state_ec_17"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1703</field>
+        <field name="name">Mejia</field>
+    </record>
+    <record id="ecuador_res_city_181" model="res.city">
+        <field name="state_id" ref="state_ec_17"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1704</field>
+        <field name="name">Pedro Moncayo</field>
+    </record>
+    <record id="ecuador_res_city_182" model="res.city">
+        <field name="state_id" ref="state_ec_17"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1705</field>
+        <field name="name">Rumiñahui</field>
+    </record>
+    <record id="ecuador_res_city_183" model="res.city">
+        <field name="state_id" ref="state_ec_17"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1707</field>
+        <field name="name">San Miguel De Los Bancos</field>
+    </record>
+    <record id="ecuador_res_city_184" model="res.city">
+        <field name="state_id" ref="state_ec_17"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1708</field>
+        <field name="name">Pedro Vicente MaldonadO</field>
+    </record>
+    <record id="ecuador_res_city_185" model="res.city">
+        <field name="state_id" ref="state_ec_17"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1709</field>
+        <field name="name">Puerto Quito</field>
+    </record>
+    <record id="ecuador_res_city_186" model="res.city">
+        <field name="state_id" ref="state_ec_18"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1801</field>
+        <field name="name">Ambato</field>
+    </record>
+    <record id="ecuador_res_city_187" model="res.city">
+        <field name="state_id" ref="state_ec_18"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1802</field>
+        <field name="name">Baños De Agua Santa</field>
+    </record>
+    <record id="ecuador_res_city_188" model="res.city">
+        <field name="state_id" ref="state_ec_18"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1803</field>
+        <field name="name">Cevallos</field>
+    </record>
+    <record id="ecuador_res_city_189" model="res.city">
+        <field name="state_id" ref="state_ec_18"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1804</field>
+        <field name="name">Mocha</field>
+    </record>
+    <record id="ecuador_res_city_190" model="res.city">
+        <field name="state_id" ref="state_ec_18"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1805</field>
+        <field name="name">Patate</field>
+    </record>
+    <record id="ecuador_res_city_191" model="res.city">
+        <field name="state_id" ref="state_ec_18"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1806</field>
+        <field name="name">Quero</field>
+    </record>
+    <record id="ecuador_res_city_192" model="res.city">
+        <field name="state_id" ref="state_ec_18"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1807</field>
+        <field name="name">San Pedro De Pelileo</field>
+    </record>
+    <record id="ecuador_res_city_193" model="res.city">
+        <field name="state_id" ref="state_ec_18"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1808</field>
+        <field name="name">Santiago De Pillaro</field>
+    </record>
+    <record id="ecuador_res_city_194" model="res.city">
+        <field name="state_id" ref="state_ec_18"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1809</field>
+        <field name="name">Tisaleo</field>
+    </record>
+    <record id="ecuador_res_city_195" model="res.city">
+        <field name="state_id" ref="state_ec_19"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1901</field>
+        <field name="name">Zamora</field>
+    </record>
+    <record id="ecuador_res_city_196" model="res.city">
+        <field name="state_id" ref="state_ec_19"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1902</field>
+        <field name="name">Chinchipe</field>
+    </record>
+    <record id="ecuador_res_city_197" model="res.city">
+        <field name="state_id" ref="state_ec_19"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1903</field>
+        <field name="name">Nangaritza</field>
+    </record>
+    <record id="ecuador_res_city_198" model="res.city">
+        <field name="state_id" ref="state_ec_19"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1904</field>
+        <field name="name">Yacuambi</field>
+    </record>
+    <record id="ecuador_res_city_199" model="res.city">
+        <field name="state_id" ref="state_ec_19"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1905</field>
+        <field name="name">Yantzaza</field>
+    </record>
+    <record id="ecuador_res_city_200" model="res.city">
+        <field name="state_id" ref="state_ec_19"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1906</field>
+        <field name="name">El Pangui</field>
+    </record>
+    <record id="ecuador_res_city_201" model="res.city">
+        <field name="state_id" ref="state_ec_19"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1907</field>
+        <field name="name">Centinela Del Condor</field>
+    </record>
+    <record id="ecuador_res_city_202" model="res.city">
+        <field name="state_id" ref="state_ec_19"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1908</field>
+        <field name="name">Palanda</field>
+    </record>
+    <record id="ecuador_res_city_203" model="res.city">
+        <field name="state_id" ref="state_ec_19"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">1909</field>
+        <field name="name">Paquisha</field>
+    </record>
+    <record id="ecuador_res_city_204" model="res.city">
+        <field name="state_id" ref="state_ec_20"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2001</field>
+        <field name="name">San Cristobal</field>
+    </record>
+    <record id="ecuador_res_city_205" model="res.city">
+        <field name="state_id" ref="state_ec_20"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2002</field>
+        <field name="name">Isabela</field>
+    </record>
+    <record id="ecuador_res_city_206" model="res.city">
+        <field name="state_id" ref="state_ec_20"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2003</field>
+        <field name="name">Santa Cruz</field>
+    </record>
+    <record id="ecuador_res_city_207" model="res.city">
+        <field name="state_id" ref="state_ec_21"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2101</field>
+        <field name="name">Lago Agrio</field>
+    </record>
+    <record id="ecuador_res_city_208" model="res.city">
+        <field name="state_id" ref="state_ec_21"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2102</field>
+        <field name="name">Gonzalo Pizarro</field>
+    </record>
+    <record id="ecuador_res_city_209" model="res.city">
+        <field name="state_id" ref="state_ec_21"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2103</field>
+        <field name="name">Putumayo</field>
+    </record>
+    <record id="ecuador_res_city_210" model="res.city">
+        <field name="state_id" ref="state_ec_21"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2104</field>
+        <field name="name">Shushufindi</field>
+    </record>
+    <record id="ecuador_res_city_211" model="res.city">
+        <field name="state_id" ref="state_ec_21"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2105</field>
+        <field name="name">Sucumbios</field>
+    </record>
+    <record id="ecuador_res_city_212" model="res.city">
+        <field name="state_id" ref="state_ec_21"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2106</field>
+        <field name="name">Cascales</field>
+    </record>
+    <record id="ecuador_res_city_213" model="res.city">
+        <field name="state_id" ref="state_ec_21"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2107</field>
+        <field name="name">Cuyabeno</field>
+    </record>
+    <record id="ecuador_res_city_214" model="res.city">
+        <field name="state_id" ref="state_ec_22"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2201</field>
+        <field name="name">Orellana</field>
+    </record>
+    <record id="ecuador_res_city_215" model="res.city">
+        <field name="state_id" ref="state_ec_22"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2202</field>
+        <field name="name">Aguarico</field>
+    </record>
+    <record id="ecuador_res_city_216" model="res.city">
+        <field name="state_id" ref="state_ec_22"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2203</field>
+        <field name="name">La Joya De Los Sachas</field>
+    </record>
+    <record id="ecuador_res_city_217" model="res.city">
+        <field name="state_id" ref="state_ec_22"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2204</field>
+        <field name="name">Loreto</field>
+    </record>
+    <record id="ecuador_res_city_218" model="res.city">
+        <field name="state_id" ref="state_ec_23"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2301</field>
+        <field name="name">Santo Domingo</field>
+    </record>
+    <record id="ecuador_res_city_219" model="res.city">
+        <field name="state_id" ref="state_ec_24"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2401</field>
+        <field name="name">Santa Elena</field>
+    </record>
+    <record id="ecuador_res_city_220" model="res.city">
+        <field name="state_id" ref="state_ec_24"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2402</field>
+        <field name="name">La Libertad</field>
+    </record>
+    <record id="ecuador_res_city_221" model="res.city">
+        <field name="state_id" ref="state_ec_24"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">2403</field>
+        <field name="name">Salinas</field>
+    </record>
+    <record id="ecuador_res_city_222" model="res.city">
+        <field name="state_id" ref="state_ec_90"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">9001</field>
+        <field name="name">Las Golondrinas</field>
+    </record>
+    <record id="ecuador_res_city_223" model="res.city">
+        <field name="state_id" ref="state_ec_90"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">9003</field>
+        <field name="name">Manga Del Cura</field>
+    </record>
+    <record id="ecuador_res_city_224" model="res.city">
+        <field name="state_id" ref="state_ec_90"/>
+        <field name="country_id" ref="base.ec"/>
+        <field name="zipcode">9004</field>
+        <field name="name">El Piedrero</field>
+    </record>
+
+</odoo>

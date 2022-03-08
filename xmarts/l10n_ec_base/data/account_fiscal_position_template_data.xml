@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="0">
+
+    <record id="fp_companies" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_juridica"/>
+        <field name="is_force_keep_accounting">SI</field>
+        <field name="name">SOCIEDADES - PERSONAS JURÍDICAS</field>
+    </record>
+
+    <record id="fp_companies_agent" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_juridica"/>
+        <field name="is_force_keep_accounting">SI</field>
+        <field name="name">SOCIEDADES - AGENTES DE RETENCIÓN</field>
+    </record>
+
+    <record id="fp_special_taxation_companies" model="account.fiscal.position.template">
+    	<field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">CONTRIBUYENTES ESPECIALES</field>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_juridica"/>
+        <field name="is_force_keep_accounting">SI</field>
+    </record>
+
+    <record id="fp_public_companies" model="account.fiscal.position.template">
+    	<field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">SECTOR PÚBLICO Y ENTIDADES PÚBLICAS</field>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_juridica"/>
+        <field name="is_force_keep_accounting">SI</field>
+    </record>
+
+    <record id="fp_person_obligated_accounting" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">PERSONA NATURAL OBLIGADA A LLEVAR CONTABILIDAD</field>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_natural"/>
+        <field name="is_force_keep_accounting">SI</field>
+    </record>
+
+    <record id="fp_person_leases" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">PERSONA NATURAL NO OBLIGADA - ARRIENDOS</field>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_natural"/>
+        <field name="is_force_keep_accounting">NO</field>
+    </record>
+
+    <record id="fp_person_professional" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">PERSONA NATURAL NO OBLIGADA - PROFESIONALES</field>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_natural"/>
+        <field name="is_force_keep_accounting">NO</field>
+    </record>
+
+    <record id="fp_person_rustic" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">PERSONA NATURAL NO OBLIGADA - LIQUIDACIONES DE COMPRAS</field>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_natural"/>
+        <field name="is_force_keep_accounting">NO</field>
+    </record>
+
+    <record id="fp_person_other" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">PERSONA NATURAL NO OBLIGADAS - EMITE FACTURA O NOTA DE VENTA</field>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_natural"/>
+        <field name="is_force_keep_accounting">NO</field>
+    </record>
+
+    <record id="fp_foreing_company_local" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">EMPRESA EXTRANJERA - VENTA LOCAL</field>
+    </record>
+
+    <record id="fp_foreing_person_local" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">PERSONA EXTRANJERA - VENTA LOCAL</field>
+    </record>
+
+    <record id="fp_foreing_company_exports" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">EMPRESA EXTRANJERA - EXPORTACIÓN</field>
+    </record>
+
+    <record id="fp_foreing_person_exports" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">PERSONA EXTRANJERA - EXPORTACIÓN</field>
+    </record>
+
+    <record id="fp_others" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">OTRAS - Sin cálculo automático de retención de IVA</field>
+    </record>
+
+    <record id="pn_rimpe" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">PERSONA NATURAL RIMPE</field>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_natural"/>
+    </record>
+
+    <record id="pn_rimpe_wh" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">PERSONA NATURAL RIMPE(AGENTE DE RETENCIÓN)</field>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_natural"/>
+    </record>
+
+    <record id="pj_rimpe" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">SOCIEDAD RIMPE</field>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_juridica"/>
+        <field name="is_force_keep_accounting">SI</field>
+    </record>
+
+    <record id="pj_rimpe_wh" model="account.fiscal.position.template">
+        <field name="chart_template_id" ref="l10n_ec_ifrs"/>
+        <field name="name">SOCIEDAD RIMPE(AGENTE DE RETENCIÓN)</field>
+        <field name="l10n_ec_person_type_id" ref="l10n_ec_juridica"/>
+        <field name="is_force_keep_accounting">SI</field>
+    </record>
+
+</odoo>

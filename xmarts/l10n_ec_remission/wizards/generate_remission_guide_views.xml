@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- GUÍAS DE REMISIÓN -->
+
+    <!-- FORM VIEW -->
+    <record id="generate_remission_guide_form_wizard" model="ir.ui.view">
+        <field name="name">generate.remission.guide.form.wizard</field>
+        <field name="model">generate.remission.guide</field>
+        <field name="arch" type="xml">
+            <form string="Remission Guide">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="picking_id" readonly="1" forcesave="1"/>
+                            <field name="partner_id" readonly="1" forcesave="1"/>
+                            <field name="company_id" readonly="1" forcesave="1"/>
+                            <field name="carrier_id"/>
+                            <field name="license_plate"/>
+                        </group>
+                        <group>
+                            <field name="date"/>
+                            <field name="is_electronic_document"/>
+                            <field name="l10n_ec_emission_point_id"/>
+                            <field name="l10n_latam_document_type_id"/>
+                        </group>
+                        <group>
+                            <field name="reason_id"/>
+                            <field name="route_id"/>
+                            <field name="date_start"/>
+                            <field name="date_end"/>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="button_generate_guide" string="Generate Guide" type="object" icon="fa-file-alt"/>
+                    <button string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_generate_remission_guide" model="ir.actions.act_window">
+        <field name="name">Generate Remission Guide</field>
+        <field name="res_model">generate.remission.guide</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+
+</odoo>

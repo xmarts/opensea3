@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="l10n_ec_sri_tax_form_set_tree_view" model="ir.ui.view">
+        <field name="name">Tax form set tree view</field>
+        <field name="model">l10n.ec.sri.tax.form.set</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date_from"/>
+                <field name="date_to"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="tax_form_set_form_view">
+        <field name="name">Tax form set form view</field>
+        <field name="model">l10n_ec_sri.tax.form.set</field>
+        <field name="arch" type="xml">
+            <form string="Tax form set">
+                <header>
+                    <button name="get_invoices" string="Get invoices" type="object" class="btn-primary"/>
+                    <button name="prepare_sri_declaration" string="Prepare declaration" type="object" class="btn-primary"/>
+                    <button name="%(tax_line_action)d" type="action" string="Tax analysis"/>
+                    <button name="%(ats_line_action)d" type="action" string="ATS analysis"/>
+                </header>
+                <sheet>
+                    <group string="Declaration data">
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                    </group>
+                    <notebook>
+                        <page string="Forms">
+                            <field name="sri_tax_form_ids" nolabel="1">
+                                <tree>
+                                    <field name="formulario"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Compras">
+                            <field name="in_invoice_ids" nolabel="1" >
+                                <tree limit="5" create="0">
+                                    <field name="type"/>
+                                    <field name="secuencial"/>
+                                    <field name="number"/>
+                                    <field name="date"/>
+                                    <field name="date_invoice"/>
+                                    <field name="amount_total"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Ventas">
+                            <field name="out_invoice_ids" nolabel="1">
+                                <tree limit="5" create="0">
+                                    <field name="type"/>
+                                    <field name="secuencial"/>
+                                    <field name="number"/>
+                                    <field name="date"/>
+                                    <field name="date_invoice"/>
+                                    <field name="amount_total"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Devoluciones en compras">
+                            <field name="in_refund_ids" nolabel="1">
+                                <tree limit="5" create="0">
+                                    <field name="type"/>
+                                    <field name="secuencial"/>
+                                    <field name="number"/>
+                                    <field name="date"/>
+                                    <field name="date_invoice"/>
+                                    <field name="amount_total"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Devoluciones en ventas">
+                            <field name="out_refund_ids" nolabel="1">
+                                <tree limit="5" create="0">
+                                    <field name="type"/>
+                                    <field name="secuencial"/>
+                                    <field name="number"/>
+                                    <field name="date"/>
+                                    <field name="date_invoice"/>
+                                    <field name="amount_total"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="No declarado">
+                            <field name="no_declarado_ids" nolabel="1">
+                                <tree limit="10" create="0">
+                                    <field name="type"/>
+                                    <field name="secuencial"/>
+                                    <field name="number"/>
+                                    <field name="date"/>
+                                    <field name="date_invoice"/>
+                                    <field name="amount_total"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="l10n_ec_sri_tax_form_set_list_action">
+        <field name="name">Tax form set action</field>
+        <field name="res_model">l10n.ec.sri.tax.form.set</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Declaraciones.
+            </p>
+        </field>
+    </record>
+
+
+</odoo>

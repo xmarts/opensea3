@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- ENTITY POINT -->
+
+    <!-- TREE VIEW -->
+    <record id="view_l10n_ec_entity_tree" model="ir.ui.view">
+        <field name="name">l10n.ec.emission.tree</field>
+        <field name="model">l10n.ec.emission</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- SEARCH VIEW -->
+    <record id="view_l10n_ec_entity_search" model="ir.ui.view">
+        <field name="name">l10n.ec.emission.search</field>
+        <field name="model">l10n.ec.emission</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- FORM VIEW -->
+    <record id="view_l10n_ec_entity_form" model="ir.ui.view">
+        <field name="name">l10n.ec.emission.form</field>
+        <field name="model">l10n.ec.emission</field>
+        <field name="arch" type="xml">
+            <form >
+                <sheet>
+                    <group>
+                        <field name="active" invisible="1"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

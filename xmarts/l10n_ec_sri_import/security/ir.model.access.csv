@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_l10n_ec_import_document,Access Import Document,model_l10n_ec_import_document,base.group_user,1,1,1,1
+access_l10n_ec_import_document_line,Access Import Document Line,model_l10n_ec_import_document_line,base.group_user,1,1,1,1
+access_l10n_ec_import_file_line,Access Import File Line,model_l10n_ec_import_file_line,base.group_user,1,1,1,1

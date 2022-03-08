@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+
+    <record id="ec_ruc" model="l10n_latam.identification.type">
+        <field name="name">RUC</field>
+        <field name="country_id" ref="base.ec"/>
+        <field name="is_vat" eval="True"/>
+        <field name="sequence">10</field>
+        <field name="code">04</field>
+    </record>
+    <record id="ec_id" model="l10n_latam.identification.type">
+        <field name="name">CÉDULA DE IDENTIDAD</field>
+        <field name="country_id" ref="base.ec"/>
+        <field name="is_vat" eval="True"/>
+        <field name="sequence">20</field>
+        <field name="code">05</field>
+    </record>
+    <record id="l10n_latam_base.it_pass" model="l10n_latam.identification.type">
+        <field name="name">PASAPORTE</field>
+        <field name="is_vat" eval="False"/>
+        <field name="sequence">30</field>
+        <field name="code">06</field>
+    </record>
+    <record id="ec_final" model="l10n_latam.identification.type">
+        <field name="name">VENTA A CONSUMIDOR FINAL</field>
+        <field name="country_id" ref="base.ec"/>
+        <field name="is_vat" eval="False"/>
+        <field name="sequence">40</field>
+        <field name="code">07</field>
+    </record>
+    <record id="ec_ex" model="l10n_latam.identification.type">
+        <field name="name">IDENTIFICACIÓN DEL EXTERIOR</field>
+        <field name="is_vat" eval="False"/>
+        <field name="sequence">50</field>
+        <field name="code">08</field>
+    </record>
+
+
+</odoo>

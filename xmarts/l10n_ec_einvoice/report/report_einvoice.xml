@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="report_einvoice" model="ir.actions.report">
+        <field name="name">Factura Electrónica</field>
+        <field name="model">account.move</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">l10n_ec_einvoice.report_einvoice_template</field>
+        <field name="report_file">l10n_ec_einvoice.report_einvoice_template</field>
+        <field name="binding_model_id" ref="account.model_account_move"/>
+        <field name="binding_type">report</field>
+        <field name="print_report_name">'FACTURA_'+object.l10n_latam_document_number</field>
+        <field name="paperformat_id" ref="l10n_ec_einvoice.paperformat_einvoice"/>
+    </record>
+
+    <template id="report_einvoice_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="l10n_ec_einvoice.einvoice_layout_elec">
+                    <div class="page">
+                        <link href="/l10n_ec_einvoice/static/css/report.css" rel="stylesheet" type="text/css"/>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="logo">
+                                    <img t-if="o.company_id.logo" height="100" t-att-src="'data:image/png;base64,%s' % o.company_id.logo.decode()"/>
+                                </div><br/>
+                                <div class="einvoice_address">
+                                    <h4><span t-esc="o.company_id.name"/></h4>
+                                    <span>Dirección: </span><span t-esc="o.company_id.street"/><t t-if="o.company_id.street2"> Y <span t-esc="o.company_id.street2"/></t><br/>
+                                    <span>Dirección Matriz: </span><span t-esc="o.company_id.street"/> Y <span t-esc="o.company_id.street2"/><br/>
+                                    <t t-if="o.company_id.is_special_taxpayer=='SI'">
+                                        <strong>Contribuyente Especial Nro.: </strong>
+                                        <span t-esc="o.company_id.taxpayer_code or '000' "/><br/>
+                                    </t>
+                                    <span>Obligado a Llevar contabilidad:</span><span t-esc="o.company_id.is_force_keep_accounting"/><br/>
+                                    <t t-if="o.company_id.agent==True">
+                                        <strong>Agente de Retención: </strong>SI<br/>
+                                        <strong>Resolución: </strong><span t-esc="o.company_id.agent_text"/><br/>
+                                    </t>
+                                </div>
+                            </div>
+                            <div class="col-6 einvoice_type">
+                                <span style="font-size: 18px"><strong>RUC </strong></span> <span style="font-size: 18px" t-esc="o.company_id.vat"/><br/>
+                                <h4 style="text-align: center;">FACTURA</h4><br/>
+                                <strong>NÚMERO:</strong> <span t-esc="o.l10n_latam_document_number"/><br/>
+                                <strong>NÚMERO DE AUTORIZACIÓN:</strong><br/>
+                                <span t-esc="o.numero_autorizacion or o.auth_number"/><br/>
+                                <strong>FECHA Y HORA DE AUTORIZACIÓN: </strong><span t-esc="o.fecha_autorizacion"/><br/>
+                                <strong>AMBIENTE: </strong><span t-esc="o.company_id.env_service == '1' and 'PRUEBAS' or 'PRODUCCIÓN'"/><br/>
+                                <span><strong>EMISIÓN: </strong><span t-esc="o.company_id.emission_code == '1' and 'NORMAL' or 'INDISPONIBILIDAD'"/></span><br/>
+                                <strong>CLAVE DE ACCESO</strong><br/>
+                                <div>
+                                    <img style="text-align:center;width:100%" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s&amp;humanreadable=1' % ('Code128', o.clave_acceso, 600, 150)"/>
+                                </div>
+                                <br/>
+                            </div>
+                        </div>
+                        <br/>
+                        <table class="table_einvoice">
+                            <tr align="left">
+                                <td style="width:25%;padding-left: 5px;border-top: 1px solid #7d7d7d;border-left: 1px solid #7d7d7d;">
+                                    <strong>Razón Social/ Nombres y Apellidos:</strong>
+                                </td>
+                                <td style="padding-left: 5px;border-top: 1px solid #7d7d7d;">
+                                    <span t-esc="o.partner_id.name.upper()"/>
+                                </td>
+                                <td style="width:15%;padding-left: 5px;border-top: 1px solid #7d7d7d;">
+                                    <strong>Identificación:</strong>
+                                </td>
+                                <td style="width:15%;padding-right: 5px;border-top: 1px solid #7d7d7d;border-right: 1px solid #7d7d7d;">
+                                    <span t-esc="o.partner_id.vat"/>
+                                </td>
+                            </tr>
+                            <tr align="left">
+                                <td style="width:10%;padding-left: 5px;border-left: 1px solid #7d7d7d;">
+                                    <strong>Fecha de Emisión:</strong>
+                                </td>
+                                <td style="padding-left: 5px;">
+                                    <span t-esc="o.date"/>
+                                </td>
+                                <td style="width:10%;padding-right: 5px;padding-left:5px;">
+                                    <strong>Guía Remisión:</strong>
+                                </td>
+                                <td colspan="3" style="padding-left: 5px;border-right: 1px solid #7d7d7d;">
+                                </td>
+                            </tr>
+                            <tr align="left">
+                                <td style="width:10%;padding-left: 5px;border-bottom: 1px solid #7d7d7d;border-left: 1px solid #7d7d7d;">
+                                    <strong>Dirección:</strong>
+                                </td>
+                                <td colspan="3" style="padding-left: 5px;border-bottom: 1px solid #7d7d7d;border-right: 1px solid #7d7d7d;">
+                                    <span t-esc="o.partner_id.street or '**'"/>
+                                    <span t-esc="o.partner_id.street2 or ' '"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <table class="table table-sm" width="100%">
+                            <thead>
+                                <th>Código</th>
+                                <th>Cant.</th>
+                                <th>Und.</th>
+                                <th>Descripción</th>
+                                <th>P. Unit.</th>
+                                <th>Subsidio</th>
+                                <th>Precio sin Subsidio</th>
+                                <th>Desc.</th>
+                                <th>Total</th>
+                            </thead>
+                            <t t-set="discountproduct" t-value="0"/>
+                            <t t-set="total_discount" t-value="0"/>
+                            <tbody class="invoice_tbody">
+                                <tr t-foreach="o.invoice_line_ids" t-as="line">
+                                    <td><span t-esc="line.product_id.default_code or ' '"/></td>
+                                    <td><span t-esc="'%.2f' % line.quantity"/></td>
+                                    <td><span t-esc="line.product_uom_id.name"/></td>
+                                    <td><span t-esc="line.name or ' '"/></td>
+                                    <td><span t-esc="'%.2f' % line.price_unit"/></td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <t t-set="discountproduct" t-value="(line.quantity*line.price_unit)*(line.discount/100)"/>
+                                    <t t-set="total_discount" t-value="total_discount+discountproduct"/>
+                                    <td><span t-esc="'%.2f' % line.discount "/></td>
+                                    <td><span t-field="line.price_subtotal" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="div_einfo">
+                            <table class="table_einfo">
+                                <tr>
+                                    <td colspan="2" style="text-align:center"><strong>Información Adicional</strong></td>
+                                </tr>
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td><strong>Observaciones: </strong></td><td><span t-esc="o.narration or '**'"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Dirección: </strong></td><td><span t-esc="o.partner_id.street or '**'"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Teléfono: </strong></td><td><span t-esc="o.partner_id.phone or '**'"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Email: </strong></td><td><span t-esc="o.partner_id.email"/></td>
+                                </tr>
+                                <t t-if="o.company_id.regime==True">
+                                    <tr>
+                                        <td colspan="2" style="text-align:center"><strong>Contribuyente Regimen Microempresas</strong></td>
+                                    </tr>
+                                </t>
+                                <t t-if="o.company_id.rimpe_regime==True">
+                                    <tr>
+                                        <td colspan="2" style="text-align:center"><strong>Contribuyente Regimen Rimpe</strong></td>
+                                    </tr>
+                                </t>
+                            </table>
+                        </div>
+                        <div style="float: right;width: 50%;padding: 5px; margin-bottom:50px">
+                            <table height="50" style="width:100%;text-align:left;" class="table table-sm table-condensed;">
+                                <tr>
+                                    <td width="55%">
+                                        <strong>SUBTOTAL 12%</strong>
+                                    </td>
+                                    <td width="45%" ><div align="right">
+                                        <t t-if="o._amounts_by_tax_group().get('vat12')">
+                                            <span t-esc="o._amounts_by_tax_group().get('vat12').get('base', '0.0')" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                        </t>
+                                        <t t-else="0.0">
+                                          $ 0.00
+                                        </t>
+                                    </div></td>
+                                </tr>
+                                <tr>
+                                    <td width="55%">
+                                        <strong>SUBTOTAL 0%</strong>
+                                    </td>
+                                    <td width="45%" ><div align="right">
+                                        <t t-if="o._amounts_by_tax_group().get('zero_vat')">
+                                            <span t-esc="o._amounts_by_tax_group().get('zero_vat').get('base', '0.0')" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                        </t>
+                                        <t t-else="0.0">
+                                           $ 0.00
+                                        </t>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="55%">
+                                        <strong>SUBTOTAL SIN IMPUESTOS</strong>
+                                    </td>
+                                    <td width="45%" ><div align="right">
+                                        <span t-esc="o.amount_untaxed" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                    </div></td>
+                                </tr>
+                                <tr>
+                                    <td width="55%">
+                                        <strong>DESCUENTO</strong>
+                                    </td>
+                                    <td width="45%" ><div align="right">
+                                        <span t-esc="sum([(line.quantity*line.price_unit)*(line.discount/100) for line in o.invoice_line_ids])" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                    </div></td>
+                                </tr>
+                                <tr>
+                                    <td width="55%">
+                                        <strong>IVA 12%</strong>
+                                    </td>
+                                    <td width="45%" ><div align="right">
+                                        <t t-if="o._amounts_by_tax_group().get('vat12')">
+                                            <span t-esc="o._amounts_by_tax_group().get('vat12').get('amount', '0.0')" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                        </t>
+                                        <t t-else="0.0">
+                                           $ 0.00
+                                        </t>
+                                    </div></td>
+                                </tr>
+                                <tr>
+                                    <td width="55%">
+                                        <strong>VALOR TOTAL</strong>
+                                    </td>
+                                    <td width="45%" ><div align="right">
+                                        <span t-esc="o.amount_total" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                    </div></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br/>
+                        <div style="float:left;width:50%;padding: 5px;">
+                            <table class="table_epago">
+                                <tr class="epago_thead">
+                                    <td colspan="2" width="30%">Forma de Pago</td>
+                                    <td>Valor</td>
+                                    <td>Plazo</td>
+                                    <td>Tiempo</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding-left: 5px;width:30%;font-size:8px"><span t-esc="o.l10n_ec_sri_payment_id.name"/></td>
+                                    <td style="padding-left: 5px;"><span t-esc="o.amount_residual"/></td>
+                                    <t t-if="o.invoice_payment_term_id">
+                                        <td style="padding-left: 5px;"><span t-esc="o.invoice_payment_term_id.line_ids[0].days"/></td>
+                                    </t>
+                                    <t t-else="">
+                                        <td style="padding-left: 5px;"> 0</td>
+                                    </t>
+                                    <td style="padding-left: 5px;"> Días</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="float: right;width: 50%;padding: 5px;">
+                            <table class="table_einvoice">
+                                <tr>
+                                    <td><strong>Valor Total sin Subsidio</strong></td>
+                                    <td><strong>0.00</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Ahorro por Subsidio (Incluye iva cuando Corresponde)</strong></td>
+                                    <td><strong>0.00</strong></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+</odoo>

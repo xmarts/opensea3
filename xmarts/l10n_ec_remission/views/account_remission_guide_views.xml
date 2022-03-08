@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- GUÍAS DE REMISIÓN -->
+
+    <!-- SEARCH VIEW -->
+    <record id="view_account_remission_guide_search" model="ir.ui.view">
+        <field name="name">account.remission.guide.search</field>
+        <field name="model">account.remission.guide</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="l10n_ec_emission_point_id"/>
+                <field name="carrier_id" options="{'no_quick_create':True,'no_open':True,'no_create_edit':False}"/>
+                <field name="company_id"/>
+                <field name="license_plate"/>
+                <field name="state"/>
+                <field name="name"/>
+                <group expand="1" string="Group By">
+                    <filter name="group_by_l10n_ec_emission_point_id" string="Emission Point" context="{'group_by':'l10n_ec_emission_point_id'}"/>
+                    <filter name="group_by_carrier_id" string="Carrier" context="{'group_by':'carrier_id'}"/>
+                    <filter name="group_by_state" string="State" context="{'group_by':'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- TREE VIEW -->
+    <record id="view_account_remission_guide_tree" model="ir.ui.view">
+        <field name="name">account.remission.guide.tree</field>
+        <field name="model">account.remission.guide</field>
+        <field name="arch" type="xml">
+            <tree string="Remission Guide" decoration-info="state=='draft'" sample="1">
+                <field name="name"/>
+                <field name="carrier_id"/>
+                <field name="license_plate"/>
+                <field name="date"/>
+                <field name="date_start"/>
+                <field name="date_end"/>
+                <!--                <field name="partner_id"/>-->
+                <field name="l10n_ec_emission_point_id"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- FORM VIEW -->
+    <record id="view_account_remission_guide_form_ec" model="ir.ui.view">
+        <field name="name">view.account.remission.guide.form.ec</field>
+        <field name="model">account.remission.guide</field>
+        <field name="arch" type="xml">
+            <form string="Remission Guide">
+                <header>
+                    <button name="button_cancel"
+                            string="Cancel"
+                            type="object"
+                            states="sent"/>
+                    <button name="button_validate"
+                            string="Validate"
+                            class="oe_highlight"
+                            type="object"
+                            states="draft"/>
+                    <button name="action_generate_edocument"
+                            string="Gen. Guía de Remisión Electronica"
+                            attrs="{'invisible': [('state', '!=', 'valid')]}"
+                            class="oe_highlight"
+                            type="object"
+                            states="valid"/>
+                    <button name="button_action_send_email"
+                            string="Enviar e Imprimir"
+                            class="oe_highlight"
+                            type="object"
+                            states="valid"/>
+                    <button name="button_draft"
+                            string="Draft"
+                            type="object"
+                            states="cancel"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" string="N° Guide" style="font-weight:bold"/>
+                        <h1>
+                            <field name="name" string="Number" class="oe_inline" readonly="1" forcesave="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="company_id" readonly="1" forcesave="1"/>
+                            <field name="carrier_id" attrs="{'readonly':[('state', '!=', 'draft')]}"/>
+                            <field name="license_plate"  attrs="{'readonly':[('state', '!=', 'draft')]}"/>
+                        </group>
+                        <group>
+                            <field name="date" attrs="{'readonly':[('state', '!=', 'draft')]}"/>
+                            <field name="l10n_ec_emission_point_id"  required="1" attrs="{'readonly':[('state', '!=', 'draft')]}"/>
+                            <field name="l10n_latam_document_type_id"  attrs="{'readonly':[('state', '!=', 'draft')]}"/>
+                        </group>
+                        <group>
+                            <field name="date_start" attrs="{'readonly':[('state', '!=', 'draft')]}"/>
+                            <field name="date_end" attrs="{'readonly':[('state', '!=', 'draft')]}"/>
+                        </group>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Details" name="details">
+                            <group>
+                                <field name="line_ids" nolabel="1" attrs="{'readonly':[('state', '!=', 'draft')]}"/>
+                                <!--                                <field name="picking_id"/>-->
+                                <!--                                <field name="move_id"/>-->
+                                <!--                                <field name="partner_id"/>-->
+                                <!--                                <field name="reason_id"/>-->
+                                <!--                                <field name="route_id"/>-->
+                                <!--                                <field name="dau"/>-->
+                            </group>
+                        </page>
+                        <page string="Electronic Invoicing" name="einvoice">
+                            <group string="Electronic Invoicing" name="einvoice">
+                                <!--                    <field name="sri_authorization_id"/>-->
+                                <field name="clave_acceso" readonly="1" forcesave="1"/>
+                                <field name="sent" invisible="1"/>
+                                <field name="numero_autorizacion" readonly="1" forcesave="1"/>
+                                <field name="fecha_autorizacion" readonly="1" forcesave="1"/>
+                                <field name="estado_autorizacion" readonly="1" forcesave="1"/>
+                                <field name="ambiente" readonly="1" forcesave="1"/>
+                                <field name="autorizado_sri" readonly="1" forcesave="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- ACTIONS -->
+
+    <record id="action_account_remission_guide_stock_tree" model="ir.actions.act_window">
+        <field name="name">Remission Guide</field>
+        <field name="res_model">account.remission.guide</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- MENUS -->
+    <menuitem action="action_account_remission_guide_stock_tree"
+              id="menu_action_account_remission_guide_stock"
+              sequence="30"
+              parent="stock.menu_stock_warehouse_mgmt"/>
+
+</odoo>

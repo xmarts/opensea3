@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+
+    <record id="base.ec" model="res.country">
+        <field name="vat_label">RUC</field>
+        <field name="currency_id" ref="base.USD"/>
+    </record>
+
+</odoo>

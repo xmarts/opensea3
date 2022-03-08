@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- ACCOUNT ATS SUPPORT-->
+
+    <!-- TREE VIEW -->
+    <record id="view_account_ats_support_tree" model="ir.ui.view">
+        <field name="name">account.ats.support.tree</field>
+        <field name="model">account.ats.support</field>
+        <field name="arch" type="xml">
+            <tree string="Voucher Support" editable="top">
+                <field name="code" select="1"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- FORM VIEW -->
+    <record id="view_account_ats_support_form" model="ir.ui.view">
+        <field name="name">account.ats.support.form</field>
+        <field name="model">account.ats.support</field>
+        <field name="arch" type="xml">
+            <form string="Voucher Support">
+                <group col="4" colspan="4">
+                    <field name="code" required="1"/>
+                    <field name="name"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- ACTIONS -->
+    <record id="action_account_ats_sustent" model="ir.actions.act_window">
+        <field name="name">Voucher Support</field>
+        <field name="res_model">account.ats.support</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- MENUS -->
+    <menuitem action="action_account_ats_sustent"
+              name="Voucher Support"
+              id="menu_action_account_ats_support"
+              sequence="1"
+              parent="l10n_ec_base.menu_electronic_invoice_sri"/>
+
+
+</odoo>

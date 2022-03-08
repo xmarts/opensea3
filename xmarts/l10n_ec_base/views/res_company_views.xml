@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- COMPANY -->
+    <record id="view_res_company_l10n_ec_form" model="ir.ui.view">
+        <field name="name">res.company.l10n.ec.form</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="l10n_ec_loc" invisible="1"/>
+                <field name="accountant_id"/>
+                <field name="legal_representative_id"/>
+            </field>
+            <field name="vat" position="attributes">
+                <attribute name="required">True</attribute>
+            </field>
+            <xpath expr="//field[@name='street2']" position="after">
+                <field name="city_id" placeholder="City" class="o_address_city" domain="[('state_id', '=', state_id)]" options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"/>
+            </xpath>
+            <xpath expr="//field[@name='state_id']" position="attributes">
+                <attribute name="options">{'no_create': True, 'no_create_edit': True, 'no_open': True}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='city']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='street']" position="attributes">
+                <attribute name="required">1</attribute>
+            </xpath>
+            <field name="vat" position="after">
+                <field name="property_account_position_id"/>
+                <field name="regime"/>
+                <field name="rimpe_regime"/>
+                <field name="is_force_keep_accounting"/>
+                <label for="is_special_taxpayer" string="Tax Payer code"/>
+                <div>
+                    <field name="is_special_taxpayer"/>
+                    <span class="oe_read_only"> - </span>
+                    <field name="taxpayer_code" attrs="{'invisible': [('is_special_taxpayer', '!=', 'SI')], 'required': [('is_special_taxpayer', '!=', '000')]}"/>
+                </div>
+                <label for="agent" string="Withholding Agent"/>
+                <div>
+                    <field name="agent"/>
+                    <span class="oe_read_only"> - </span>
+                    <field name="agent_text" placeholder="Authorized Code" attrs="{'invisible':[('agent', '=', False)]}"/>
+                </div>
+            </field>
+        </field>
+    </record>
+
+</odoo>

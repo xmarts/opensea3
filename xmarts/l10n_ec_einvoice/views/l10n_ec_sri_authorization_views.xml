@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- SRI AUTHORIZATION FORM -->
+
+    <record id="view_sri_authorization_form" model="ir.ui.view">
+        <field name="name">view.l10n.ec.sri.authorization.form</field>
+        <field name="model">l10n.ec.sri.authorization</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="sri_authorization_code" class="oe_inline"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="reference"/>
+                            <field name="res_id" invisible="1"/>
+                            <field name="res_model" invisible="1"/>
+                            <field name="sri_create_date"/>
+                            <field name="sri_authorization_date"/>
+                            <field name="env_service"/>
+                            <field name="l10n_latam_document_type_id"/>
+                        </group>
+                        <group>
+                            <field name="barcode" widget="image"/>
+                            <field name="xml_file" filename="xml_filename"/>
+                            <field name="xml_filename" invisible="1"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- SRI AUTHORIZATION TREE -->
+
+    <record id="view_sri_authorization_tree" model="ir.ui.view">
+        <field name="name">view.l10n.ec.sri.authorization.tree</field>
+        <field name="model">l10n.ec.sri.authorization</field>
+        <field name="arch" type="xml">
+            <tree create="false" edit="false">
+                <field name="sri_authorization_code"/>
+                <field name="sri_create_date"/>
+                <field name="sri_authorization_date"/>
+                <field name="env_service"/>
+                <field name="processed"/>
+                <field name="l10n_latam_document_type_id"/>
+                <field name="res_id" invisible="1"/>
+                <field name="res_model" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- SRI AUTHORIZATION SEARCH -->
+
+    <record id="view_sri_authorization_search" model="ir.ui.view">
+        <field name="name">view.l10n.ec.sri.authorization.search</field>
+        <field name="model">l10n.ec.sri.authorization</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="sri_authorization_code"/>
+                <field name="sri_create_date"/>
+                <field name="sri_authorization_date"/>
+                <field name="env_service"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- ACTION -->
+
+    <record id="l10n_ec_sri_authorization_act_window" model="ir.actions.act_window">
+        <field name="name">SRI Authorizations</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">l10n.ec.sri.authorization</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- MENU -->
+
+    <menuitem action="l10n_ec_sri_authorization_act_window"
+              id="menu_sri_authorization"
+              parent="l10n_ec_base.menu_electronic_invoice_sri"/>
+
+</odoo>

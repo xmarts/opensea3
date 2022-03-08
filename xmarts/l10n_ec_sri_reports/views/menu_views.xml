@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem name="Reportes SRI"
+              id="menu_sri_reporting"
+              parent="account_accountant.menu_accounting"/>
+
+
+</odoo>

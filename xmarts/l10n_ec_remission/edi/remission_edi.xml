@@ -1,0 +1,18 @@
+<odoo>
+
+    <record id="email_template_eremision" model="mail.template">
+        <field name="name">Send Remission Guide</field>
+        <field name="email_from">${object.company_id.email}</field>
+        <field name="subject">GUIA DE REMISION ${object.company_id.name}</field>
+        <field name="partner_to">${object.partner_id.id}</field>
+        <field name="model_id" ref="l10n_ec_remission.model_account_remission_guide"/>
+        <field name="report_template" ref="l10n_ec_remission.report_eremission_guide"/>
+        <field name="report_name">GUIA DE REMISION_${(object.name or '').replace('/','_')}</field>
+        <field name="lang">${object.carrier_id.lang}</field>
+        <field name="body_html"><![CDATA[
+        Estimado/a ${bject.partner_id.name}, adjunto encontrará su guía de remisión electrónica número ${object.name}.
+        En caso de requerir cualquier aclaración, por favor no dude en contactarnos.]]>
+        </field>
+    </record>
+
+</odoo>

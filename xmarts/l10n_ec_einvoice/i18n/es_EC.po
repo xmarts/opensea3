@@ -1,0 +1,1267 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ec_einvoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-28 16:29+0000\n"
+"PO-Revision-Date: 2021-07-28 11:57-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.2.4\n"
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,body_html:l10n_ec_einvoice.email_template_ewithholding
+msgid ""
+"\n"
+"              Estimado/a ${ object.partner_id.name },\n"
+"              adjunto encontrará su retención electrónica número ${object.name}, con "
+"fecha\n"
+"              de emisión ${object.date} por un total de ${object.amount_total} "
+"${object.currency_id.name}.\n"
+"\n"
+"              En caso de requerir cualquier aclaración, por favor no dude en "
+"contactarnos.\n"
+"            "
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,body_html:l10n_ec_einvoice.email_template_einvoice
+msgid ""
+"\n"
+"              Estimado/a ${object.partner_id.name},\n"
+"              adjunto encontrará su factura electrónica número ${object."
+"l10n_latam_document_number}, con fecha\n"
+"              de emisión ${object.invoice_date} por un total de ${abs(object."
+"amount_total)} ${object.currency_id.name}.\n"
+"\n"
+"              En caso de requerir cualquier aclaración, por favor no dude en "
+"contactarnos.\n"
+"        "
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,body_html:l10n_ec_einvoice.email_template_eliq
+msgid ""
+"\n"
+"              Estimado/a ${object.partner_id.name},\n"
+"              adjunto encontrará su liquidación de compras número ${object."
+"l10n_latam_document_number}, con fecha\n"
+"              de emisión ${object.invoice_date} por un total de ${abs(object."
+"amount_total)} ${object.currency_id.name}.\n"
+"\n"
+"              En caso de requerir cualquier aclaración, por favor no dude en "
+"contactarnos.\n"
+"        "
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,body_html:l10n_ec_einvoice.email_template_ecreditnote
+msgid ""
+"\n"
+"              Estimado/a ${object.partner_id.name},\n"
+"              adjunto encontrará su nota de crédito número ${object."
+"l10n_latam_document_number}, con fecha\n"
+"              de emisión ${object.invoice_date} por un total de ${abs(object."
+"amount_total)} ${object.currency_id.name}.\n"
+"              En caso de requerir cualquier aclaración, por favor no dude en "
+"contactarnos.\n"
+"        "
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "&amp;nbsp;<span>on</span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+msgid "0.00"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid ""
+"<br/>\n"
+"                                        <strong>Dirección Sucursal: </strong><strong/>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid ""
+"<br/>\n"
+"                                    <strong>AMBIENTE: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid ""
+"<br/>\n"
+"                                    <strong>CLAVE DE ACCESO</strong><br/>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+msgid ""
+"<br/>\n"
+"                                    <strong>Dirección Matriz: </strong><strong/>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid ""
+"<br/>\n"
+"                                    <strong>Dirección Sucursal: </strong><strong/>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid ""
+"<br/>\n"
+"                                    <strong>FECHA Y HORA DE AUTORIZACIÓN: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid ""
+"<br/>\n"
+"                                    <strong>NÚMERO DE AUTORIZACIÓN:</strong><br/>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid ""
+"<br/>\n"
+"                                    <strong>NÚMERO</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid ""
+"<br/>\n"
+"                                <span><strong>Dirección: </strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid ""
+"<br/>\n"
+"                                <span><strong>Email: </strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid ""
+"<br/>\n"
+"                                <span><strong>Teléfono: </strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid ""
+"<br/>\n"
+"                                <strong>AMBIENTE: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+msgid ""
+"<br/>\n"
+"                                <strong>CLAVE DE ACCESO</strong><br/>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid ""
+"<br/>\n"
+"                                <strong>CLAVE DE ACCESO</strong><br/><br/>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid ""
+"<br/>\n"
+"                                <strong>EMISIÓN: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid ""
+"<br/>\n"
+"                                <strong>FECHA Y HORA DE AUTORIZACIÓN: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid ""
+"<br/>\n"
+"                                <strong>NUMERO DE AUTORIZACIÓN:</strong><br/>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid ""
+"<br/>\n"
+"                                <strong>NUMERO</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid ""
+"<br/>\n"
+"                                <strong>NÚMERO DE AUTORIZACIÓN:</strong><br/>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+msgid ""
+"<br/>\n"
+"                                <strong>NÚMERO:</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid ""
+"<br/>\n"
+"                                <strong>NÚMERO</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<span style=\"font-size: 18px\"><strong>RUC </strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid "<span><strong>DIRECCIÓN:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid "<span><strong>FECHA DE EMISIÓN:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<span><strong>Fecha de Emisión:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid "<span><strong>IDENTIFICACIÓN:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<span><strong>Identificación:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid ""
+"<span><strong>Información Adicional</strong></span><br/><br/>\n"
+"                                <span><strong>Observaciones: </strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid "<span><strong>NOMBRES Y APELLIDOS:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<span><strong>Razón Social/ Nombres y Apellidos:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<span>Factura</span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<span>IVA</span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<span>Liquidación de Compra</span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<span>RENTA</span>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>0.00</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid "<strong><span>Forma de Pago</span></strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid "<strong><span>Valor</span></strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid ""
+"<strong>Agente de Retención: </strong>SI<br/>\n"
+"                                            <strong>Resolución: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid ""
+"<strong>Agente de Retención: </strong>SI<br/>\n"
+"                                        <strong>Resolución: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Ahorro por Subsidio (Incluye iva cuando Corresponde)</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Base Imponible</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Comprobante que se modifica:</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Comprobante</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Contribuyente Especial Nro.: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Contribuyente Regimen Microempresas</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Código Retención</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Dirección: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Dirección: </strong><strong/>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+msgid "<strong>Dirección:</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>EMISIÓN: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Ejercicio Fiscal</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Email: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Fecha Emisión (Comprobante a modificar):</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Fecha Emisión</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Fecha de Emisión:</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Forma de Pago</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+msgid "<strong>Guía Remisión:</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Identificación:</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Impuesto</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Información Adicional</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Número</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+msgid "<strong>Obligado a Llevar contabilidad: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid "<strong>Obligado a Llevar contabilidad: </strong> SI"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Obligado a Llevar contabilidad: </strong> SI<br/>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Observaciones: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Porcentaje Retención</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Razón Social/ Nombres y Apellidos:</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+msgid "<strong>Razón de la Modificación:</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Razón de la Modificación</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Subtotal</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Teléfono: </strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "<strong>Valor Retenido</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Valor Total sin Subsidio</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Valor de la Modificación</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "<strong>Valor</strong>"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__active
+msgid "Active?"
+msgstr "Activo?"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company__agent_text
+msgid "Agent Text"
+msgstr "N° de resolución"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_bank_statement_line__ambiente
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__ambiente
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__ambiente
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_payment__ambiente
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__ambiente
+msgid "Ambiente"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__sri_authorization_code
+msgid "Authorization Code"
+msgstr "Código de Autorización"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__sri_authorization_date
+msgid "Authorization Date"
+msgstr "Fecha de Autorización"
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.view_res_company_einvoice_form
+msgid "Authorized Code"
+msgstr "Código Autorizado"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_bank_statement_line__sri_authorization_id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__sri_authorization_id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__sri_authorization_id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_payment__sri_authorization_id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__sri_authorization_id
+msgid "Autorización SRI"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_ewithholding
+msgid "COMPROBANTE DE RETENCIÓN"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+msgid "Cant."
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,help:l10n_ec_einvoice.field_res_company__agent
+msgid "Check if the company is withholding agent"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_bank_statement_line__clave_acceso
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__clave_acceso
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__clave_acceso
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_payment__clave_acceso
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__clave_acceso
+msgid "Clave de Acceso"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,help:l10n_ec_einvoice.field_res_company__agent_text
+msgid "Codigo autorizado"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model,name:l10n_ec_einvoice.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__company_id
+msgid "Company"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__create_uid
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__create_uid
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_payment__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__create_date
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__create_date
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_payment__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_payment__code
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+msgid "Código"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_bank_statement_line__security_code
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__security_code
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__security_code
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_payment__security_code
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__security_code
+msgid "Código de Seguridad"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+msgid "Desc."
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+msgid "Descripción"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__display_name
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__display_name
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__display_name
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__display_name
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_payment__display_name
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company__display_name
+msgid "Display Name"
+msgstr "Nombre a Mostrar"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__document_type
+msgid "Document Type"
+msgstr "Tipo de documento"
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.view_res_company_einvoice_form
+msgid "Documentos Electrónicos"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.view_account_ewithholding_form
+msgid "Electronic Invoicing"
+msgstr "Facturación Electrónica"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model,name:l10n_ec_einvoice.model_l10n_ec_sri_key
+msgid "Electronic Key"
+msgstr "Llave electrónica"
+
+#. module: l10n_ec_einvoice
+#: model:ir.ui.menu,name:l10n_ec_einvoice.menu_sri_signs
+msgid "Electronic Keys"
+msgstr "Llaves electrónicas"
+
+#. module: l10n_ec_einvoice
+#: model:ir.actions.act_window,name:l10n_ec_einvoice.l10n_ec_sri_key_act_window
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company__l10n_ec_sri_key_id
+msgid "Electronic Sign"
+msgstr "Firma electrónica"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__file_content
+msgid "Electronic Sign File"
+msgstr "Firma"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__file_name
+msgid "Electronic Sign Filename"
+msgstr "Nombre de archivo"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__password
+msgid "Electronic Sign Password"
+msgstr "Clave"
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.view_account_move_einvoice_filter
+msgid "Electrónicas"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_bank_statement_line__sent
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__sent
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__sent
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_payment__sent
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__sent
+msgid "Enviado?"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.view_account_ewithholding_form
+msgid "Enviar Retención"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__env_service
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company__env_service
+msgid "Environment Type"
+msgstr "Tipo de Ambiente"
+
+#. module: l10n_ec_einvoice
+#: code:addons/l10n_ec_einvoice/models/l10n_ec_sri_key.py:0
+#, python-format
+msgid ""
+"Error opening the signature, possibly the signature key has been entered incorrectly "
+"or the file is not supported. \n"
+"%s"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: code:addons/l10n_ec_einvoice/models/l10n_ec_sri_key.py:0
+#, python-format
+msgid ""
+"Error opening the signature, possibly the signature key has been entered incorrectly "
+"or the file is not supported. \n"
+"%s "
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__state
+msgid "Estado"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_bank_statement_line__estado_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__estado_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__estado_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_payment__estado_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__estado_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__estado_autorizacion
+msgid "Estado de Autorización"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__l10n_ec_sri_key__state__expired
+msgid "Expired"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "FACTURA"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,subject:l10n_ec_einvoice.email_template_einvoice
+msgid ""
+"FACTURA ELECTRÓNICA N° ${object.l10n_latam_document_number}/ ${object.company_id.name}"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,report_name:l10n_ec_einvoice.email_template_einvoice
+msgid "FACTURA_${(object.l10n_latam_document_number or '').replace('/','_')}"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.view_account_ewithholding_form
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.view_account_move_epayment_form
+msgid "Facturación Electrónica"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company__is_offline
+msgid "Facturación Offline"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.view_account_move_einvoice_filter
+msgid "Facturas electrónicas"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_bank_statement_line__fecha_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__fecha_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__fecha_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_payment__fecha_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__fecha_autorizacion
+msgid "Fecha Autorización"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__emision_date
+msgid "Fecha de Emision"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__expire_date
+msgid "Fecha de Vencimiento"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_bank_statement_line__l10n_ec_sri_payment_id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__l10n_ec_sri_payment_id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_payment__l10n_ec_sri_payment_id
+msgid "Forma de Pago"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.view_account_ewithholding_form
+msgid "Gen.Ret Electronica"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.view_account_move_epayment_form
+msgid "Generar Doc. Electrónico"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_payment__id
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__res_company__emission_code__2
+msgid "Indisponibilidad"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__move_id
+msgid "Invoice Related"
+msgstr "Factura Relacionada"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__l10n_ec_sri_authorization__document_type__invoice
+msgid "Invoices/Credit Notes/Liq Purchase"
+msgstr "Facturas/Notas de Crédito/Liquidación de Compra"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model,name:l10n_ec_einvoice.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company__is_force_keep_accounting
+msgid "Keep Accounting"
+msgstr "Obligado a llevar contabilidad"
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,report_name:l10n_ec_einvoice.email_template_eliq
+msgid "LIQUIDACION_${(object.l10n_latam_document_number or '').replace('/','_')}"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+msgid "LIQUIDACIÓN DE COMPRA DE BIENES Y PRESTACIÓN DE SERVICIOS"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,subject:l10n_ec_einvoice.email_template_eliq
+msgid ""
+"LIQUIDACIÓN DE COMPRAS ELECTRÓNICA N° ${object.l10n_latam_document_number}/ ${object."
+"company_id.name}"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument____last_update
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move____last_update
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding____last_update
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization____last_update
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key____last_update
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_payment____last_update
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company____last_update
+msgid "Last Modified on"
+msgstr "Fecha de modificación"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__write_uid
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__write_uid
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_payment__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__write_date
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__write_date
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_payment__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,help:l10n_ec_einvoice.field_res_company__regime
+msgid "Marcar si la empresa está clasificada como Contribuyente Microempresas"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company__regime
+msgid "Microempresa Regime"
+msgstr "Régimen de Microempresas"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model,name:l10n_ec_einvoice.model_account_edocument
+msgid "Model for Ecuador's Electronic Documents"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+msgid "NOTA DE CRÉDITO"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,subject:l10n_ec_einvoice.email_template_ecreditnote
+msgid ""
+"NOTA DE CRÉDITO ELECTRÓNICA N° ${object.l10n_latam_document_number}/ ${object."
+"company_id.name}"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotadebito
+msgid "NOTA DE DÉBITO"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,report_name:l10n_ec_einvoice.email_template_ecreditnote
+msgid "NOTADECREDITO_${(object.l10n_latam_document_number or '').replace('/','_')}"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__res_company__is_force_keep_accounting__no
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__res_company__is_special_taxpayer__000
+msgid "No"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_payment__name
+msgid "Nombre"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__res_company__emission_code__1
+msgid "Normal"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.actions.report,name:l10n_ec_einvoice.report_ecreditnote
+msgid "Nota de Crédito Electrónica"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.actions.report,name:l10n_ec_einvoice.report_edebitnote
+msgid "Nota de Débito Electrónica"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__subject_serial_number
+msgid "Numero de Serie(Asunto)"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__cert_serial_number
+msgid "Numero de serie(cerificado)"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_bank_statement_line__numero_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__numero_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__numero_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_payment__numero_autorizacion
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__numero_autorizacion
+msgid "Número de Autorización"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__subject_common_name
+msgid "Organizacion(Asunto)"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__issuer_common_name
+msgid "Organizacion(Emisor)"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+msgid "P. Unit."
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+msgid "Precio sin Subsidio"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__private_key
+msgid "Private Key"
+msgstr "Llave privada"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__processed
+msgid "Processed"
+msgstr "Procesado"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__l10n_ec_sri_authorization__env_service__2
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__res_company__env_service__2
+msgid "Production"
+msgstr "Producción"
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,report_name:l10n_ec_einvoice.email_template_ewithholding
+msgid "RETENCION_${(object.name or '').replace('/','_')}"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:mail.template,subject:l10n_ec_einvoice.email_template_ewithholding
+msgid "RETENCIÓN ELECTRÓNICA ${object.name} /${object.company_id.name}"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model,name:l10n_ec_einvoice.model_l10n_ec_sri_authorization
+msgid "SRI Authorization"
+msgstr "Autorización SRI"
+
+#. module: l10n_ec_einvoice
+#: model:ir.actions.act_window,name:l10n_ec_einvoice.l10n_ec_sri_authorization_act_window
+#: model:ir.ui.menu,name:l10n_ec_einvoice.menu_sri_authorization
+msgid "SRI Authorizations"
+msgstr "Autorizaciones SRI"
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.l10n_ec_sri_key_form_view
+msgid "SRI Sign"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: code:addons/l10n_ec_einvoice/models/account_move.py:0
+#, python-format
+msgid "Send Electronic Invoice"
+msgstr "Enviar factura electrónica"
+
+#. module: l10n_ec_einvoice
+#: code:addons/l10n_ec_einvoice/models/account_withholding.py:0
+#, python-format
+msgid "Send Electronic withholding"
+msgstr "Enviar retención electrónica"
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.l10n_ec_sri_key_tree_view
+msgid "Sign"
+msgstr "Firma"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company__is_special_taxpayer
+msgid "Special TaxPayer"
+msgstr "Contribuyente especial"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__sri_create_date
+msgid "Sri Create Date"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.actions.act_window,name:l10n_ec_einvoice.l10n_ec_sri_payment_act_window
+#: model:ir.ui.menu,name:l10n_ec_einvoice.menu_sri_payment_method
+msgid "Sri Payment Method"
+msgstr "Formas de Pago SRI"
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+msgid "Subsidio"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.l10n_ec_sri_key_form_view
+msgid "Sync Key"
+msgstr "Sincronizar firma"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__l10n_ec_sri_authorization__env_service__1
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__res_company__env_service__1
+msgid "Test"
+msgstr "Pruebas"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_bank_statement_line__emission_code
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__emission_code
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__emission_code
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_payment__emission_code
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__emission_code
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company__emission_code
+msgid "Tipo de Emisión"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.l10n_ec_sri_key_form_view
+msgid "Title"
+msgstr "Título"
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_eliq_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_ec_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.report_enotacredito
+msgid "Und.."
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__l10n_ec_sri_key__state__unverified
+msgid "Unverified"
+msgstr "Sin verificar"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__l10n_ec_sri_key__state__valid
+msgid "Valid"
+msgstr "Validado"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_key__cert_version
+msgid "Version"
+msgstr "Versión"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_res_company__agent
+#: model_terms:ir.ui.view,arch_db:l10n_ec_einvoice.view_res_company_einvoice_form
+msgid "Withholding Agent"
+msgstr "Agente de retención"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model,name:l10n_ec_einvoice.model_account_withholding
+msgid "Withholding Documents"
+msgstr "rETENCIONES"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_l10n_ec_sri_authorization__withholding_id
+msgid "Withholding Related"
+msgstr "Retención relacionada"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__l10n_ec_sri_authorization__document_type__withholding
+msgid "Withholdings"
+msgstr "Retenciones"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__res_company__is_force_keep_accounting__si
+#: model:ir.model.fields.selection,name:l10n_ec_einvoice.selection__res_company__is_special_taxpayer__284
+msgid "Yes"
+msgstr "Sí"
+
+#. module: l10n_ec_einvoice
+#: model:ir.model,name:l10n_ec_einvoice.model_l10n_ec_sri_payment
+msgid "l10n.ec.sri.payment"
+msgstr ""
+
+#. module: l10n_ec_einvoice
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_bank_statement_line__autorizado_sri
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_edocument__autorizado_sri
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_move__autorizado_sri
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_payment__autorizado_sri
+#: model:ir.model.fields,field_description:l10n_ec_einvoice.field_account_withholding__autorizado_sri
+msgid "¿Autorizado SRI?"
+msgstr ""

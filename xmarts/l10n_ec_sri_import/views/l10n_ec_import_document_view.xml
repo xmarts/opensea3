@@ -1,0 +1,110 @@
+<odoo>
+    
+    <record model="ir.ui.view" id="l10n_ec_import_document_tree_view">
+        <field name="name">l10n.ec.import.document.tree.view</field>
+        <field name="model">l10n.ec.import.document</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="file_type"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="l10n_ec_import_document_search_view">
+        <field name="name">l10n.ec.import.document.search.view</field>
+        <field name="model">l10n.ec.import.document</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="state"/>
+                <field name="file_type"/>
+                <filter name="group_by_state" string="State" context="{'group_by':'state'}"/>
+                <filter name="group_by_file_type" string="File Type" context="{'group_by':'file_type'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="l10n_ec_import_document_form_view">
+        <field name="name">l10n.ec.import.document.form.view</field>
+        <field name="model">l10n.ec.import.document</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_import_file" string="Import File" class="oe_highlight" type="object" icon="fa-upload" states="draft"/>
+                    <button name="button_close" string="Close" class="oe_highlight" type="object" states="imported"/>
+                    <button name="button_cancel" string="Cancel" type="object" states="imported,closed"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" force_save="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="date_from" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="file_type" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        </group>
+                        <group>
+                            <field name="date_to" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        </group>
+                    </group>
+<!--                    <group>-->
+<!--                        <div attrs="{'invisible': [('file_type','=', 'txt')]}" class="oe_grey">-->
+<!--                            Only insert xml files in attachments to create them in system-->
+<!--                        </div>-->
+<!--                        <div attrs="{'invisible': [('file_type','=', 'xml')]}" class="oe_grey">-->
+<!--                            Only insert txt files in attachments to validate this are in system-->
+<!--                        </div>-->
+<!--                    </group>-->
+                    <group string="Files to import">
+                        <field name="file_ids" nolabel="1" required="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                    </group>
+                    <notebook>
+                        <page string="Invoices">
+                            <group>
+                                <field name="invoice_counter" force_save="1"/>
+                            </group>
+                            <field name="line_ids" domain="[('l10n_latam_document_type_id.code','=', '01')]"/>
+                        </page>
+                        <page string="Withholdings">
+                            <group>
+                                <field name="withholding_counter" force_save="1"/>
+                            </group>
+                            <field name="line_ids" domain="[('l10n_latam_document_type_id.code','=', '07')]"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="l10n_ec_import_document_act_window" model="ir.actions.act_window">
+        <field name="name">Import invoices</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">l10n.ec.import.document</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Load a new file!
+            </p>
+        </field>
+    </record>
+
+    <menuitem
+            name="Load documents"
+            id="menu_l10n_ec_import_document_act_window"
+            groups="account.group_account_manager,account.group_account_user"
+            action="l10n_ec_import_document_act_window"
+            parent="account.menu_finance_payables"
+            sequence="1"/>
+ 
+</odoo>

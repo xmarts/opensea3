@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- RETENCIONES LÍNEAS-->
+
+    <!-- TREE VIEW -->
+    <record id="view_account_invoice_line_tax_tree" model="ir.ui.view">
+        <field name="name">account.invoice.line.tree</field>
+        <field name="model">account.invoice.tax</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sequence" widget="handle"/>
+                <field name="withholding_id" invisible="1"/>
+                <field name="tax_id"/>
+                <field name="group_id"/>
+                <field name="base" force_save="1"/>
+                <field name="amount"/>
+                <field name="account_id"/>
+                <field name="fiscal_year"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- FORM VIEW -->
+    <record id="account_invoice_tax_view_form" model="ir.ui.view">
+        <field name="name">account.invoice.tax.form</field>
+        <field name="model">account.invoice.tax</field>
+        <field name="arch" type="xml">
+            <form string="Manual Invoice Taxes">
+                <group>
+                    <group>
+                        <field name="tax_id"
+                               required="1"
+                               domain="[('tax_group_id.l10n_ec_type','in',['wh_vat', 'wh_vat_services','wh_vat_assets', 'wh_income_tax'])]"
+                               options="{'no_create': True, 'no_create_edit': True}"/>
+                        <field name="name"/>
+                        <field name="sequence" invisible="1"/>
+                        <field name="account_id"/>
+                        <field name="account_analytic_id"/>
+                    </group>
+                    <group>
+                        <field name="group_id"/>
+                        <field name="fiscal_year" readonly="1"/>
+                        <field name="manual"/>
+                        <field name="base" force_save="1"/>
+                        <field name="amount"/>
+                        <field name="currency_id" invisible="1"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+</odoo>

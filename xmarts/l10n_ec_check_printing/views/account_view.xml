@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_account_journal_check_form" model="ir.ui.view">
+            <field name="name">view.account.journal.check</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_journal_form" />
+            <field name="arch" type="xml">
+                <field name="outbound_payment_method_ids" position="after">
+                    <field name="check_report_id" options="{'no_create':True}" domain="[('model','in',['account.payment','account.payment.payroll'])]"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_account_payment_third_party_form" model="ir.ui.view">
+            <field name="name">view.account.payment.third.party</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_form" />
+            <field name="arch" type="xml">
+                <field name="payment_method_id" position="after">
+                    <field name="to_third_party" attrs="{'invisible': [('payment_method_code','!=','check_printing')]}"/>
+                    <field name="third_party_name"
+                           attrs="{'invisible': [('to_third_party','=',False)], 'required' :[('to_third_party','=',True)]}"/>
+                </field>
+                <group position="after">
+                    <separator string="Informacion del Cheque"
+                               attrs="{'invisible': [('payment_method_code','not in',['check_printing','batch_payment'])]}"/>
+                    <group col="2" colspan="2" attrs="{'invisible': [('payment_method_code','not in',['check_printing','batch_payment'])]}">
+                        <field name="date_to" attrs="{'required':[('payment_method_code','in',['batch_payment'])], 'readonly':[('state','not in','draft')], 'invisible':[('payment_method_code','in',['check_printing'])]}"/>
+                        <field name="date_to" string="Fecha de Entrega" attrs="{'required':[('payment_method_code','in',['check_printing'])], 'readonly':[('state','not in','draft')], 'invisible':[('payment_method_code','in',['batch_payment'])]}"/>
+                        <field name="number" attrs="{'required':[('payment_method_code','in',['batch_payment'])], 'readonly':[('state','not in','draft')],'invisible': [('payment_method_code','not in',['batch_payment'])]}"/>
+                        <field name="bank" attrs="{'required':[('payment_method_code','in',['check_printing','batch_payment'])], 'readonly':[('state','not in','draft')]}"/>
+                        <field name="check_type" attrs="{'required':[('payment_method_code','in',['check_printing','batch_payment'])], 'readonly':[('state','not in','draft')]}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+
+        <!-- <record id="view_account_payment_from_invoices_inherit" model="ir.ui.view">
+        <field name="name">account.invoice.payment.form.inherit</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_invoice_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='payment_method_code']" position="after">
+                <field name="date_to" attrs="{'required':[('payment_method_code','in',['check_printing','batch_payment'])],'invisible': [('payment_method_code','not in',['batch_payment','check_printing'])]}"/>
+                <field name="number" attrs="{'required':[('payment_method_code','in',['batch_payment'])],'invisible': [('payment_method_code','not in',['batch_payment'])]}"/>
+                <field name="bank" attrs="{'required':[('payment_method_code','in',['check_printing','batch_payment'])],'invisible': [('payment_method_code','not in',['batch_payment','check_printing'])]}"/>
+                <field name="check_type" attrs="{'required':[('payment_method_code','in',['check_printing','batch_payment'])],'invisible': [('payment_method_code','not in',['batch_payment','check_printing'])]}"/>
+            </xpath>
+        </field>
+        </record> -->
+    </data>
+</odoo>

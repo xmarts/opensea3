@@ -1,0 +1,802 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ec_remission
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-31 16:13+0000\n"
+"PO-Revision-Date: 2022-01-31 11:17-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_EC\n"
+"X-Generator: Poedit 2.2.4\n"
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid ""
+"<br/>\n"
+"                                            <strong>Dirección Matriz: </strong><strong/>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid ""
+"<br/>\n"
+"                                        <strong>AMBIENTE: </strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid ""
+"<br/>\n"
+"                                        <strong>CLAVE DE ACCESO</strong><br/>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid ""
+"<br/>\n"
+"                                        <strong>FECHA Y HORA DE AUTORIZACIÓN: </strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid ""
+"<br/>\n"
+"                                        <strong>NÚMERO DE AUTORIZACIÓN:</strong><br/>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid ""
+"<br/>\n"
+"                                        <strong>NÚMERO:</strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span style=\"font-size: 18px\"><strong>RUC </strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>COMPRABANTE DE VENTA:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>DESTINATARIO</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>FECHA DE EMISIÓN:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>FIN TRASLADO:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>IDENTIFICACIÓN DEL TRANSPORTISTA</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>IDENTIFICACIÓN:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>INICIO TRASLADO:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>MOTIVO:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>N. AUTORIZACIÓN:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>N. COMPROBANTE:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>NOMBRE/RAZON SOCIAL:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>NOMBRE/RAZÓN SOCIAL:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>PLACA:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>PUNTO DE LLEGADA:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>PUNTO DE PARTIDA:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>RUTA:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span><strong>TELÉFONO:</strong></span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span>FACTURA</span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<span>N/A</span>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid ""
+"<strong>Agente de Retención: </strong>SI<br/>\n"
+"                                                <strong>Resolución: </strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<strong>Contribuyente Especial Nro.: </strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<strong>Contribuyente Regimen Microempresas</strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<strong>Dirección: </strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<strong>Dirección: </strong><strong/>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<strong>EMISIÓN: </strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<strong>Email: </strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<strong>Información Adicional</strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<strong>Obligado a Llevar contabilidad: </strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "<strong>Teléfono: </strong>"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_l10n_ec_stablishment__electronic_remission
+msgid "Allow electronic remission"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__ambiente
+msgid "Ambiente"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__sri_authorization_id
+msgid "Autorización SRI"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "CANTIDAD"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields.selection,name:l10n_ec_remission.selection__account_remission_guide__state__cancel
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.generate_remission_guide_form_wizard
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_form_ec
+msgid "Cancel"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__carrier_id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__carrier_id
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_search
+msgid "Carrier"
+msgstr "Transportista"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__clave_acceso
+msgid "Clave de Acceso"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__company_id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__company_id
+msgid "Company"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model,name:l10n_ec_remission.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__create_uid
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_route__create_uid
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__create_uid
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_remission_guide_reason__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__create_date
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_route__create_date
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__create_date
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_remission_guide_reason__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__partner_id
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "CÓDIGO AUX."
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "CÓDIGO DE BARRA"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__security_code
+msgid "Código de Seguridad"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__dau
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__dau
+msgid "DAU"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "DESCRIPCIÓN"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__date_end
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__date_end
+msgid "Delivery date end"
+msgstr "Fecha de inicio de entrega"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__date_start
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__date_start
+msgid "Delivery date start"
+msgstr "Fecha de fin de entrega"
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_form_ec
+msgid "Details"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__display_name
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_route__display_name
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__display_name
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_l10n_ec_stablishment__display_name
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_remission_guide_reason__display_name
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_res_partner__display_name
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_sale_order__display_name
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__l10n_latam_document_type_id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__l10n_latam_document_type_id
+msgid "Document Type"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_form_ec
+msgid "Electronic Invoicing"
+msgstr "Facturación Electrónica"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__l10n_ec_emission_point_id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__l10n_ec_emission_point_id
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_search
+msgid "Emission Point"
+msgstr "Punto de Emisión"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__date
+msgid "Emission date"
+msgstr "Fecha de Emisión"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__sent
+msgid "Enviado?"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__estado_autorizacion
+msgid "Estado de Autorización"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__fecha_autorizacion
+msgid "Fecha Autorización"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.report_eremission_guide_template
+msgid "GUÍA DE REMISIÓN"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_form_ec
+msgid "Gen. Guía de Remisión Electronica"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.generate_remission_guide_form_wizard
+msgid "Generate Guide"
+msgstr "Generar Guía"
+
+#. module: l10n_ec_remission
+#: model:ir.actions.act_window,name:l10n_ec_remission.action_generate_remission_guide
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_stock_picking_guide_form
+msgid "Generate Remission Guide"
+msgstr "Generar Guía de Remisión"
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_search
+msgid "Group By"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_bank_statement_line__guide_id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_move__guide_id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_payment__guide_id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_stock_picking__guide_id
+msgid "Guide"
+msgstr "Guía"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_sale_order__guide_ids
+msgid "Guides"
+msgstr "Guías"
+
+#. module: l10n_ec_remission
+#: model:ir.actions.report,name:l10n_ec_remission.report_eremission_guide
+msgid "Guía de Remisión"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_route__id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_l10n_ec_stablishment__id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_remission_guide_reason__id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_res_partner__id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_sale_order__id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_stock_picking__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__message_needaction
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__message_has_error
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__move_id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__move_id
+msgid "Invoice"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_res_partner__is_carrier
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_res_users__is_carrier
+msgid "Is Carrier?"
+msgstr "Es transportista?"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model,name:l10n_ec_remission.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_move____last_update
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide____last_update
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_route____last_update
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide____last_update
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_l10n_ec_stablishment____last_update
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_remission_guide_reason____last_update
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_res_partner____last_update
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_sale_order____last_update
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_stock_picking____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__write_uid
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_route__write_uid
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__write_uid
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_remission_guide_reason__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__write_date
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_route__write_date
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__write_date
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_remission_guide_reason__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__license_plate
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__license_plate
+msgid "License Plate"
+msgstr "Placa"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__name
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_route__name
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_remission_guide_reason__name
+msgid "Name"
+msgstr "Guía"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_form_ec
+msgid "Number"
+msgstr "Número"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_form_ec
+msgid "N° Guide"
+msgstr "N° de Guía"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__numero_autorizacion
+msgid "Número de Autorización"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__partner_id
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_search
+msgid "Partner"
+msgstr "Cliente"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__picking_id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__picking_id
+msgid "Picking"
+msgstr "Operación"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__reason_id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__reason_id
+msgid "Reason"
+msgstr "Motivo"
+
+#. module: l10n_ec_remission
+#: model:ir.actions.act_window,name:l10n_ec_remission.action_account_remission_guide_acc_tree
+#: model:ir.actions.act_window,name:l10n_ec_remission.action_account_remission_guide_stock_tree
+#: model:ir.ui.menu,name:l10n_ec_remission.menu_action_account_remission_guide_acc
+#: model:ir.ui.menu,name:l10n_ec_remission.menu_action_account_remission_guide_stock
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.generate_remission_guide_form_wizard
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_form_ec
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_tree
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_invoice_form
+msgid "Remission Guide"
+msgstr "Guía de Remisión"
+
+#. module: l10n_ec_remission
+#: model:ir.model,name:l10n_ec_remission.model_remission_guide_reason
+msgid "Remission Guide Reason"
+msgstr "Motivos de Guía de Remisión "
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_l10n_ec_stablishment__remission_guide_sequence_id
+msgid "Remission Guide Sequence"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model,name:l10n_ec_remission.model_account_remission_guide
+msgid "Remission Guides"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__route_id
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__route_id
+msgid "Route"
+msgstr "Rutas"
+
+#. module: l10n_ec_remission
+#: model:ir.model,name:l10n_ec_remission.model_account_remission_route
+msgid "Routes for Remission Guide"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model,name:l10n_ec_remission.model_sale_order
+msgid "Sales Order"
+msgstr "Aviso para pedido de venta"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields.selection,name:l10n_ec_remission.selection__account_remission_guide__state__sent
+msgid "Sent"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__origin
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_generate_remission_guide__origin
+msgid "Source Document"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model,name:l10n_ec_remission.model_l10n_ec_stablishment
+msgid "Stablishment"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__state
+#: model_terms:ir.ui.view,arch_db:l10n_ec_remission.view_account_remission_guide_search
+msgid "State"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__emission_code
+msgid "Tipo de Emisión"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model,name:l10n_ec_remission.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields.selection,name:l10n_ec_remission.selection__account_remission_guide__state__valid
+msgid "Valid"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,help:l10n_ec_remission.field_account_remission_guide__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model,name:l10n_ec_remission.model_generate_remission_guide
+msgid "Wizard to generate remission guide"
+msgstr ""
+
+#. module: l10n_ec_remission
+#: model:ir.model.fields,field_description:l10n_ec_remission.field_account_remission_guide__autorizado_sri
+msgid "¿Autorizado SRI?"
+msgstr ""

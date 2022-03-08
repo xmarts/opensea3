@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- ACCOUNT EWITHHOLDING FORM-->
+
+    <record id="view_account_ewithholding_form" model="ir.ui.view">
+        <field name="name">account.ewithholding.form</field>
+        <field name="model">account.withholding</field>
+        <field name="inherit_id" ref="l10n_ec_base.view_account_withholding_form_ec"/>
+        <field name="arch" type="xml">
+<!--            <xpath expr="//sheet" position="inside">-->
+<!--                <div name="button_box" class="oe_button_box">-->
+<!--                    <button string="Consultar en SRI"-->
+<!--                            type="object"-->
+<!--                            icon="fa-refresh"-->
+<!--                            name="show_document_info"-->
+<!--                            class="oe_stat_button"-->
+<!--                            attrs="{'invisible': [('state', '=', 'draft')]}"/>-->
+<!--                </div>-->
+<!--            </xpath>-->
+            <button name="button_draft" position="after">
+                <button name="action_generate_ewithholding"
+                        string="Gen.Ret Electronica"
+                        class="oe_highlight"
+                        type="object"
+                        attrs="{'invisible': ['|','|','|',('withholding_type','=','out_invoice'),('sent','=',True),('autorizado_sri','=',True),('state','!=','done')]}"/>
+                <button name="action_withholding_send"
+                        string="Enviar Retención"
+                        class="oe_highlight"
+                        type="object"
+                        attrs="{'invisible': ['|','|',('withholding_type','=','out_invoice'),('autorizado_sri','=', False),('sent','=',True)]}"/>
+            </button>
+            <xpath expr="//page[@name='taxes']" position="after">
+                <page string="Facturación Electrónica" name="einvoice"  attrs="{'invisible': [('withholding_type','=','out_invoice')]}">
+                    <group string="Electronic Invoicing" name="einvoice">
+                        <field name="sri_authorization_id" readonly="1"/>
+                        <field name="clave_acceso" readonly="1"/>
+                        <field name="sent" invisible="1"/>
+                        <field name="numero_autorizacion" readonly="1" />
+                        <field name="fecha_autorizacion" readonly="1"/>
+                        <field name="estado_autorizacion" readonly="1"/>
+                        <field name="ambiente" readonly="1"/>
+                        <field name="autorizado_sri" invisible="1"/>
+                        <field name="to_cancel" attrs="{'invisible': [('numero_autorizacion', '=', '')]}"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ACCOUNT EWITHHOLDING TREE-->
+
+    <record id="view_account_ewithholding_tree" model="ir.ui.view">
+        <field name="name">account.ewithholding.tree</field>
+        <field name="model">account.withholding</field>
+        <field name="inherit_id" ref="l10n_ec_base.view_account_withholding_tree"/>
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field name="autorizado_sri"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
