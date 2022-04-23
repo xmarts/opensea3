@@ -1,8 +1,3 @@
-[submodule "xmarts/l10n_ec_payroll"]
-	path = xmarts/l10n_ec_payroll
-	url = git@github.com:xmarts/l10n_ec_payroll.git
-	branch = 14.0-payroll
-
 [submodule "xmarts/ks-dashboard-ninja"]
 	path = xmarts/ks-dashboard-ninja
 	url = git@github.com:xmarts/ks-dashboard-ninja.git
