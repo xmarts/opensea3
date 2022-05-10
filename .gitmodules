@@ -15,3 +15,8 @@
 	path = xmarts/l10n_ec_payroll
 	url = git@github.com:xmarts/l10n_ec_payroll.git
 	branch = 14.0
+
+[submodule "xmarts/l10n_ec_obscura_ops"]
+	path = xmarts/l10n_ec_obscura_ops
+	url = git@github.com:xmarts/l10n_ec_obscura_ops.git
+	branch = 14.0
